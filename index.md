@@ -24,12 +24,6 @@
   - Jinmok Kim, Donguk Kim, Jinbum Park, Jihoon Kim, Hyoungshick Kim
   - Journal of The Korea Institute of Information Security & Cryptology VOL.25, NO.4, Aug. 2015
 
-### 2012
-
-- Host-based DRDoS Defense Model proposed and implemented
-  - Jinbum Park
-  - Conference on Information Security and Cryptology. Winter 2012 (CISC-W'12)
-
 ## Conferences
 
 ### 2018
@@ -41,6 +35,12 @@
 - Exploit Linux kernel eBPF with side-channel [[code](https://github.com/jinb-park/linux-exploit)]
   - Jinbum Park
   - KIMCHICON 2018
+  
+### 2012
+
+- Host-based DRDoS Defense Model proposed and implemented
+  - Jinbum Park
+  - Conference on Information Security and Cryptology. Winter 2012 (CISC-W'12)
 
 ## Projects
 
