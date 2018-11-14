@@ -9,7 +9,7 @@
 ### 2018
 
 - Prime+Count: Novel Cross-world Covert Channels on ARM TrustZone
-  [[paper](http://www.public.asu.edu/~hcho67/papers/prime+count-acsac18.pdf) | [code](https://github.com/samsung/prime-count)]
+  [[paper](http://www.public.asu.edu/~hcho67/papers/prime+count-acsac18.pdf), [code](https://github.com/samsung/prime-count)]
   - Haehyun Cho, Penghui Zhang, Donguk Kim, Jinbum Park, Choong-Hoon Lee, Ziming Zhao, Adam Doupé, and Gail-Joon Ahn
   - Annual Computer Security Applications Conference (ACSAC) 2018
 
@@ -32,7 +32,7 @@
 ### 2018
 
 - Attack and Defense on Linux kernel
-  [[slide](https://www.soscon.net/pdf/day1_1330_3.pdf) | [code](https://github.com/jinb-park/linux-exploit/tree/master/samples)]
+  [[slide](https://www.soscon.net/pdf/day1_1330_3.pdf), [code](https://github.com/jinb-park/linux-exploit/tree/master/samples)]
   - Jinbum Park
   - Samsung Open Source Conference (SOSCON) 2018
   
