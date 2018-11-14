@@ -26,11 +26,25 @@
 
 ### 2012
 
-- 
+- Host-based DRDoS Defense Model proposed and implemented
+  - Jinbum Park
+  - Conference on Information Security and Cryptology. Winter 2012 (CISC-W'12)
 
 ## Conferences
 
+### 2018
+
+- Attack and Defense on Linux kernel [[slide](https://www.soscon.net/pdf/day1_1330_3.pdf) | [code](https://github.com/jinb-park/linux-exploit/tree/master/samples)]
+  - Jinbum Park
+  - Samsung Open Source Conference (SOSCON) 2018
+  
+- Exploit Linux kernel eBPF with side-channel [[code](https://github.com/jinb-park/linux-exploit)]
+  - Jinbum Park
+  - KIMCHICON 2018
+
 ## Projects
+
+- CSCA: Crypto Side Channel Attack [[code](https://github.com/jinb-park/crypto-side-channel-attack)]
 
 ## Opensource Contributions
 
