@@ -62,6 +62,9 @@
 - arm: Makes ptdump reusable and add WX page checking
   [[patch](https://lkml.org/lkml/2017/12/7/321)]
   
+- arm: Add ARCH_HAS_FORTIFY_SOURCE
+  [patch-[0](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=73b9160d0dfe), [1](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=ee333554fed5)]
+  
 ### Ubuntu kernel
 
 - Revert barrier-patch which turns out be vulnerable to variant4 attack
