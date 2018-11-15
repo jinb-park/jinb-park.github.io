@@ -54,6 +54,19 @@
 
 ## Opensource Contributions
 
+### Linux kernel (selected)
+
+- Fix vulnerable gadgets to variant1 attack
+  [patch-[0](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=55690c07b44a), [1](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=3a2af7cccbba)]
+
+- arm: Makes ptdump reusable and add WX page checking
+  [[patch](https://lkml.org/lkml/2017/12/7/321)]
+  
+### Ubuntu kernel
+
+- Revert barrier-patch which turns out be vulnerable to variant4 attack
+  [patch-[0](https://git.launchpad.net/~ubuntu-kernel/ubuntu/+source/linux/+git/xenial/commit/?id=cb0321f01227), [1](https://git.launchpad.net/~ubuntu-kernel/ubuntu/+source/linux/+git/xenial/commit/?id=48a028480eb0)]
+
 ## Contact
 
 - E-mail :  jinb.park7@gmail.com
