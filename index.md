@@ -29,6 +29,12 @@
 
 ## Conferences
 
+### 2019
+
+- Leak kernel pointer by exploiting uninitialized uses in Linux kernel
+  - Jinbum Park
+  - Zer0Con 2019
+
 ### 2018
 
 - Attack and Defense on Linux kernel
