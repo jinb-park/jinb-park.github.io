@@ -32,6 +32,7 @@
 ### 2019
 
 - Leak kernel pointer by exploiting uninitialized uses in Linux kernel
+   [[slide](https://github.com/jinb-park/leak-kptr/blob/master/leak-kptr.pdf), [code](https://github.com/jinb-park/leak-kptr)]
   - Jinbum Park
   - Zer0Con 2019
 
