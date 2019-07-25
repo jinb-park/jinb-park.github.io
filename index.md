@@ -46,7 +46,7 @@
   - Samsung Open Source Conference (SOSCON) 2018
   
 - Exploit Linux kernel eBPF with side-channel
-  [[slide](Exploit-Linux-kernel-eBPF-with-side-channel.pdf), [code](https://github.com/jinb-park/linux-exploit)]
+  [[slide](Exploit-Linux-kernel-eBPF-with-side-channel.html), [code](https://github.com/jinb-park/linux-exploit)]
   - Jinbum Park
   - KIMCHICON 2018
   
