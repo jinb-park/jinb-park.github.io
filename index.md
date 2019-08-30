@@ -41,7 +41,7 @@
 ### 2018
 
 - Attack and Defense on Linux kernel
-  [[slide](https://www.soscon.net/pdf/day1_1330_3.pdf), [code](https://github.com/jinb-park/linux-exploit/tree/master/samples)]
+  [[slide](https://www.sosconhistory.net/soscon2018/pdf/day1_1330_3.pdf), [code](https://github.com/jinb-park/linux-exploit/tree/master/samples)]
   - Jinbum Park
   - Samsung Open Source Conference (SOSCON) 2018
   
