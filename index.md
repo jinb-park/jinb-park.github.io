@@ -8,6 +8,13 @@
 
 ## Papers
 
+### 2020
+
+- SmokeBomb: Effective Mitigation Method against Cache Side-channel Attacks on the ARM Architecture
+  (to appear)
+  - Haehyun Cho, Jinbum Park, Donguk Kim, Ziming Zhao, Yan Shoshitaishvili, Adam Doupe, Gail-Joon Ahn
+  - MobiSys 2020
+
 ### 2018
 
 - Prime+Count: Novel Cross-world Covert Channels on ARM TrustZone
