@@ -10,10 +10,15 @@
 
 ### 2020
 
-- SmokeBomb: Effective Mitigation Method against Cache Side-channel Attacks on the ARM Architecture
+- Exploiting Uses of Uninitialized Stack Variables in Linux Kernels to Leak Kernel Pointers
   (to appear)
+  - Haehyun Cho, Jinbum Park, Joonwon Kang, Tiffany Bao, Ruoyu Wang, Yan Shoshitaishvili, Adam Doupe, Gail-Joon Ahn
+  - The 14th USENIX Workshop on Offensive Technologies (WOOT '20)
+
+- SmokeBomb: Effective Mitigation Method against Cache Side-channel Attacks on the ARM Architecture
+  [[paper](https://dl.acm.org/doi/pdf/10.1145/3386901.3388888), [code](https://github.com/samsung/smoke-bomb)]
   - Haehyun Cho, Jinbum Park, Donguk Kim, Ziming Zhao, Yan Shoshitaishvili, Adam Doupe, Gail-Joon Ahn
-  - MobiSys 2020
+  - The 18th ACM International Conference on Mobile Systems, Applications, and Services (MobiSys 2020)
 
 ### 2018
 
@@ -39,6 +44,11 @@
 ## Conferences
 
 ### 2019
+
+- Micro-architectural attack and defense on Linux kernel
+  [[slide](https://www.soscon.net/content/data/session/Day%201_1630_2.pdf)
+  - Jinbum Park, Joonwon Kang
+  - Samsung Open Source Conference (SOSCON) 2019
 
 - Leak kernel pointer by exploiting uninitialized uses in Linux kernel
    [[slide](leak-kptr.pdf), [code](https://github.com/jinb-park/leak-kptr)]
