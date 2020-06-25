@@ -75,6 +75,9 @@
 
 ## Projects
 
+- KSPP Study: Analysis on Kernel Self-Protection: Understanding Security and Performance Implication
+  [[white paper](https://samsung.github.io/kspp-study/)]
+
 - CSCA: Crypto Side Channel Attack
   [[code](https://github.com/jinb-park/crypto-side-channel-attack)]
 
