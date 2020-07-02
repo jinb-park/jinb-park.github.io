@@ -2,3 +2,8 @@ theme: jekyll-theme-slate
 title: Jinbum Park
 description: Security researcher & developer
 url: https://jinb-park.github.io
+analytics:
+  provider: "google"
+  google:
+    tracking_id: "UA-171489496-1"
+    anonymize_ip: false
