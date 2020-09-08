@@ -11,7 +11,7 @@
 ### 2020
 
 - Exploiting Uses of Uninitialized Stack Variables in Linux Kernels to Leak Kernel Pointers
-  (to appear)
+  [[paper](https://www.usenix.org/system/files/woot20-paper-cho.pdf), [code](https://github.com/jinb-park/leak-kptr)]
   - Haehyun Cho, Jinbum Park, Joonwon Kang, Tiffany Bao, Ruoyu Wang, Yan Shoshitaishvili, Adam Doupe, Gail-Joon Ahn
   - The 14th USENIX Workshop on Offensive Technologies (WOOT '20)
 
@@ -46,7 +46,7 @@
 ### 2019
 
 - Micro-architectural attack and defense on Linux kernel
-  [[slide](https://www.soscon.net/content/data/session/Day%201_1630_2.pdf)
+  [[slide](https://www.soscon.net/content/data/session/Day%201_1630_2.pdf)]
   - Jinbum Park, Joonwon Kang
   - Samsung Open Source Conference (SOSCON) 2019
 
