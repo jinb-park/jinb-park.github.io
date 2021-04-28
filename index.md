@@ -5,6 +5,7 @@
 - System security
   - Trusted Execution Environments (TrustZone, SGX, Secure Processor)
   - OS Security
+  - Side-channel attacks and defenses
   - Bug finding and Exploitations
 
 ## Archives
