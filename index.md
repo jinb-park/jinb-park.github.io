@@ -16,11 +16,14 @@
 
 ## Company Works (@Samsung Research)
 
-### 2013-2014
+### 2018-Present
 
-- Samsung DRM (SDRM)
-  - Developed Samsung DRM to protect sensitive contents
-  - Used in Samsung Smart TV
+- Private info
+
+### 2017
+
+- Real-time Kernel Protection (RKP)
+  - Tiny hypervisor + hypervisor-based kernel monitoring solution on ARM64 arch.
 
 ### 2014-2016
 
@@ -29,14 +32,11 @@
   - SIM is a kernel integrity monitoring solution based on ARM TrustZone and Custom hardware IP for security.
   - SIM takes a part of Samsung Smart TV Security Solution GAIA.
 
-### 2017
+### 2013-2014
 
-- Real-time Kernel Protection (RKP)
-  - Tiny hypervisor + hypervisor-based kernel monitoring solution on ARM64 arch.
-
-### 2018-Present
-
-- Private info
+- Samsung DRM (SDRM)
+  - Developed Samsung DRM to protect sensitive contents
+  - Used in Samsung Smart TV
 
 ## Papers
 
