@@ -1,10 +1,40 @@
 ## Jinbum Park @Security Researcher
 
+## Research Interest
+
+- Trusted Execution Environments (TrustZone, SGX, Secure Processor)
+- OS Security
+- Bug finding and Exploitations
+
 ## Archives
 
 - [1st blog](http://blog.daum.net/tlos6733) written in korean.
 - [2nd blog](http://jinb-park.blogspot.com) written in english.
 - [GitHub](https://github.com/jinb-park) 
+
+## Company Works (@Samsung Research)
+
+### 2013-2014
+
+- Samsung DRM (SDRM)
+  - Developed Samsung DRM to protect sensitive contents
+  - Used in Samsung Smart TV
+
+### 2014-2016
+
+- System Integrity Monitor (SIM) Version 1.0 ~ 3.0
+  [[CC certification report](https://commoncriteriaportal.org/files/epfiles/[KECS-CR-16-08]%20Samsung%20Smart%20TV%20Security%20Solution%20GAIA%20V1.0%20Certification%20Report.pdf)]
+  - SIM is a kernel integrity monitoring solution based on ARM TrustZone and Custom hardware IP for security.
+  - SIM takes a part of Samsung Smart TV Security Solution GAIA.
+
+### 2017
+
+- Real-time Kernel Protection (RKP)
+  - Tiny hypervisor based kernel monitoring solution on ARM64 arch.
+
+### 2018-Present
+
+- Private info
 
 ## Papers
 
@@ -80,7 +110,7 @@
   - Jinbum Park
   - Conference on Information Security and Cryptology. Winter 2012 (CISC-W'12)
 
-## Projects
+## Opensource Projects
 
 - KSPP Study: Analysis on Kernel Self-Protection: Understanding Security and Performance Implication
   [[white paper](https://samsung.github.io/kspp-study/)]
