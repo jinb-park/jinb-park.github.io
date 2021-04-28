@@ -2,9 +2,10 @@
 
 ## Research Interest
 
-- Trusted Execution Environments (TrustZone, SGX, Secure Processor)
-- OS Security
-- Bug finding and Exploitations
+- System security
+  - Trusted Execution Environments (TrustZone, SGX, Secure Processor)
+  - OS Security
+  - Bug finding and Exploitations
 
 ## Archives
 
@@ -30,7 +31,7 @@
 ### 2017
 
 - Real-time Kernel Protection (RKP)
-  - Tiny hypervisor based kernel monitoring solution on ARM64 arch.
+  - Tiny hypervisor + hypervisor-based kernel monitoring solution on ARM64 arch.
 
 ### 2018-Present
 
