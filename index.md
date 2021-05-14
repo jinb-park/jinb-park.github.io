@@ -38,7 +38,7 @@
   - Developed Samsung DRM to protect sensitive contents
   - Used in Samsung Smart TV
 
-## Papers
+## Publications
 
 ### 2020
 
@@ -73,7 +73,7 @@
   - Jinmok Kim, Donguk Kim, Jinbum Park, Jihoon Kim, Hyoungshick Kim
   - Journal of The Korea Institute of Information Security & Cryptology VOL.25, NO.4, Aug. 2015
 
-## Conferences
+## Talks
 
 ### 2020
 
