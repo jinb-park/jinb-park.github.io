@@ -23,11 +23,11 @@ Since 2013, I've been working for [Samsung Research](https://research.samsung.co
 
 ## Company Works (@Samsung Research)
 
-### 2018-Present
+### 2019-Present
 
 - Private info
 
-### 2017
+### 2018
 
 - Real-time Kernel Protection (RKP)
   - Tiny hypervisor + hypervisor-based kernel monitoring solution on ARM64 arch.
