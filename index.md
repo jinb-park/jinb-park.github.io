@@ -85,7 +85,7 @@ Since 2013, I've been working for [Samsung Research](https://research.samsung.co
 ### 2020
 
 - Cache Attacks on Various CPU Architectures
-  [[slide](cache-attack-poc2020-r2.pdf)]
+  [[slide](cache-attack-poc2020-r2.pdf), [video](https://drive.google.com/file/d/1sqasfokB0LkGUvpo_G-z0XNODu4EJkJM/view)]
   - Jinbum Park
   - POC 2020
 
