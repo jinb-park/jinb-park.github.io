@@ -14,6 +14,7 @@ Since 2013, I've been working for [Samsung Research](https://research.samsung.co
   - OS Security
   - Side-channel attacks and defenses
   - Bug finding and Exploitations
+- Privacy preserving deep learing (as known as federated learning)
 
 ## Archives
 
@@ -21,11 +22,15 @@ Since 2013, I've been working for [Samsung Research](https://research.samsung.co
 - [2nd blog](http://jinb-park.blogspot.com) written in english.
 - [GitHub](https://github.com/jinb-park) 
 
-## Company Works (@Samsung Research)
+## Projects (@Samsung Research)
 
-### 2019-Present
+### 2021-present
 
-- Private info
+- private info
+
+### 2020-2021
+
+- Rust-based full-stack OS for secure element (from kernel to application framework)
 
 ### 2018
 
@@ -46,6 +51,19 @@ Since 2013, I've been working for [Samsung Research](https://research.samsung.co
   - Used in Samsung Smart TV
 
 ## Publications
+
+### 2022
+
+- ViK: Practical Mitigation of Temporal Memory Safety Violations through Object ID Inspection (to appear)
+  - Haehyun Cho, Jinbum Park, Adam Oest, Tiffany Bao, Ruoyu Wang, Yan Shoshitaishvili, Adam Doupé, Gail-Joon Ahn
+  - The 27th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS '22)
+
+### 2021
+
+- In-Kernel Control-Flow Integrity on Commodity OSes using ARM Pointer Authentication
+  [[paper](https://arxiv.org/pdf/2112.07213.pdf)]
+  - Sungbae Yoo(\*), Jinbum Park(\*), Seolheui Kim, Yeji Kim, Taesoo Kim (\*: co-leading authors)
+  - arXiv
 
 ### 2020
 
