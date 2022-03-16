@@ -16,11 +16,13 @@ Since 2013, I've been working for [Samsung Research](https://research.samsung.co
   - Bug finding and Exploitations
 - Privacy preserving deep learing (as known as federated learning)
 
-## Archives
+## Links
 
-- [1st blog](http://blog.daum.net/tlos6733) written in korean.
-- [2nd blog](http://jinb-park.blogspot.com) written in english.
-- [GitHub](https://github.com/jinb-park) 
+- [1st blog](http://blog.daum.net/tlos6733) (korean)
+- [2nd blog](http://jinb-park.blogspot.com) (english)
+- [GitHub](https://github.com/jinb-park)
+- [LinkedIn](https://www.linkedin.com/in/jinbum-park-6040ba188/)
+- [Google Scholar](https://scholar.google.com/citations?user=e-o2O2IAAAAJ)
 
 ## Projects (@Samsung Research)
 
@@ -54,16 +56,14 @@ Since 2013, I've been working for [Samsung Research](https://research.samsung.co
 
 ### 2022
 
-- ViK: Practical Mitigation of Temporal Memory Safety Violations through Object ID Inspection (to appear)
+- ViK: Practical Mitigation of Temporal Memory Safety Violations through Object ID Inspection [[paper](https://dl.acm.org/doi/10.1145/3503222.3507780)]
   - Haehyun Cho, Jinbum Park, Adam Oest, Tiffany Bao, Ruoyu Wang, Yan Shoshitaishvili, Adam Doupé, Gail-Joon Ahn
   - The 27th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS '22)
 
-### 2021
-
-- In-Kernel Control-Flow Integrity on Commodity OSes using ARM Pointer Authentication
+- In-Kernel Control-Flow Integrity on Commodity OSes using ARM Pointer Authentication (to appear)
   [[paper](https://arxiv.org/pdf/2112.07213.pdf)]
   - Sungbae Yoo(\*), Jinbum Park(\*), Seolheui Kim, Yeji Kim, Taesoo Kim (\*: co-leading authors)
-  - arXiv
+  - The 31st USENIX Security Symposium (USENIX Security 2022)
 
 ### 2020
 
@@ -99,6 +99,12 @@ Since 2013, I've been working for [Samsung Research](https://research.samsung.co
   - Journal of The Korea Institute of Information Security & Cryptology VOL.25, NO.4, Aug. 2015
 
 ## Talks
+
+### 2022
+
+- Taking Kernel Hardening to the Next Level (to appear)
+  - Jinbum Park, Haehyun Cho, Sungbae Yoo, Seolheui Kim, Yeji Kim, Bumhan Kim, Taesoo Kim
+  - Blackhat ASIA 2022
 
 ### 2020
 
