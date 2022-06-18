@@ -1,12 +1,5 @@
 ## Jinbum Park @Security Researcher
 
-## About
-
-I'm one of (passionate) security researchers and developers.
-I got B.S degree in Department of Software at [Gachon University](https://www.gachon.ac.kr/english/) in 2013.
-Also, I was in [Samsung Software Membership](https://www.secmem.org/) (at Gangnam) from 2011 to 2013.
-Since 2013, I've been working for [Samsung Research](https://research.samsung.com/).
-
 ## Research Interest
 
 - System security
@@ -15,6 +8,13 @@ Since 2013, I've been working for [Samsung Research](https://research.samsung.co
   - Side-channel attacks and defenses
   - Bug finding and Exploitations
 - Privacy preserving deep learing (as known as federated learning)
+
+## About
+
+I'm one of (passionate) security researchers and developers.
+I got B.S degree in Department of Software at [Gachon University](https://www.gachon.ac.kr/english/) in 2013.
+Also, I was in [Samsung Software Membership](https://www.secmem.org/) (at Gangnam) from 2011 to 2013.
+Since 2013, I've been working for [Samsung Research](https://research.samsung.com/).
 
 ## Links
 
@@ -102,7 +102,8 @@ Since 2013, I've been working for [Samsung Research](https://research.samsung.co
 
 ### 2022
 
-- Taking Kernel Hardening to the Next Level (to appear)
+- Taking Kernel Hardening to the Next Level
+  [[slide](https://i.blackhat.com/Asia-22/Friday-Materials/AS-22-Park-Taking-Kernel-Hardening-to-the-Next-Level.pdf)]
   - Jinbum Park, Haehyun Cho, Sungbae Yoo, Seolheui Kim, Yeji Kim, Bumhan Kim, Taesoo Kim
   - Blackhat ASIA 2022
 
