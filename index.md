@@ -8,6 +8,7 @@
   - Side-channel attacks and defenses
   - Bug finding and Exploitations
 - Privacy preserving deep learing (as known as federated learning)
+- __Blockchain and its underlying technologies (what I'm into nowdays)__
 
 ## About
 
@@ -18,11 +19,7 @@ Since 2013, I've been working for [Samsung Research](https://research.samsung.co
 
 ## Links
 
-- [1st blog](http://blog.daum.net/tlos6733) (korean)
-- [2nd blog](http://jinb-park.blogspot.com) (english)
-- [GitHub](https://github.com/jinb-park)
-- [LinkedIn](https://www.linkedin.com/in/jinbum-park-6040ba188/)
-- [Google Scholar](https://scholar.google.com/citations?user=e-o2O2IAAAAJ)
+[1st blog](http://jinb-park.hashnode.dev) (english), [2nd blog](http://blog.daum.net/tlos6733) (korean), [GitHub](https://github.com/jinb-park), [LinkedIn](https://www.linkedin.com/in/jinbum-park-6040ba188/), [Google Scholar](https://scholar.google.com/citations?user=e-o2O2IAAAAJ), [Twitter](https://twitter.com/jinb_park), [Instagram](https://www.instagram.com/tlos6733/)
 
 ## Projects (@Samsung Research)
 
