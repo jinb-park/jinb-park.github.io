@@ -8,7 +8,7 @@
   - Side-channel attacks and defenses
   - Bug finding and Exploitations
 - Privacy preserving deep learing (as known as federated learning)
-- __Blockchain and its underlying technologies (what I'm into nowdays)__
+- __Zero Knowledge Proof and its applications(what I'm into nowdays)__
 
 ## About
 
@@ -23,9 +23,9 @@ Since 2013, I've been working for [Samsung Research](https://research.samsung.co
 
 ## Projects (@Samsung Research)
 
-### 2021-present
+### 2021-2022
 
-- private info
+- A federated learning framework for mobile devices
 
 ### 2020-2021
 
@@ -57,8 +57,8 @@ Since 2013, I've been working for [Samsung Research](https://research.samsung.co
   - Haehyun Cho, Jinbum Park, Adam Oest, Tiffany Bao, Ruoyu Wang, Yan Shoshitaishvili, Adam Doupé, Gail-Joon Ahn
   - The 27th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS '22)
 
-- In-Kernel Control-Flow Integrity on Commodity OSes using ARM Pointer Authentication (to appear)
-  [[paper](https://arxiv.org/pdf/2112.07213.pdf)]
+- In-Kernel Control-Flow Integrity on Commodity OSes using ARM Pointer Authentication
+  [[paper](https://arxiv.org/pdf/2112.07213.pdf), [code](https://github.com/SamsungLabs/PALinux)]
   - Sungbae Yoo(\*), Jinbum Park(\*), Seolheui Kim, Yeji Kim, Taesoo Kim (\*: co-leading authors)
   - The 31st USENIX Security Symposium (USENIX Security 2022)
 
@@ -95,12 +95,12 @@ Since 2013, I've been working for [Samsung Research](https://research.samsung.co
   - Jinmok Kim, Donguk Kim, Jinbum Park, Jihoon Kim, Hyoungshick Kim
   - Journal of The Korea Institute of Information Security & Cryptology VOL.25, NO.4, Aug. 2015
 
-## Talks
+## Talks (Industry conferences)
 
 ### 2022
 
 - Taking Kernel Hardening to the Next Level
-  [[slide](https://i.blackhat.com/Asia-22/Friday-Materials/AS-22-Park-Taking-Kernel-Hardening-to-the-Next-Level.pdf)]
+  [[slide](https://i.blackhat.com/Asia-22/Friday-Materials/AS-22-Park-Taking-Kernel-Hardening-to-the-Next-Level.pdf), [video](https://youtu.be/1titzBiuxSc)]
   - Jinbum Park, Haehyun Cho, Sungbae Yoo, Seolheui Kim, Yeji Kim, Bumhan Kim, Taesoo Kim
   - Blackhat ASIA 2022
 
