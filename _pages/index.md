@@ -1,3 +1,9 @@
+--
+permalink: /
+layout: page
+title: Home
+---
+
 ## Jinbum Park @Security Researcher
 
 ## Research Interest
@@ -10,7 +16,7 @@
 - Privacy preserving deep learing (as known as federated learning)
 - __Zero Knowledge Proof and its applications(what I'm into nowdays)__
 
-## About
+## About me
 
 I'm one of (passionate) security researchers and developers.
 I got B.S degree in Department of Software at [Gachon University](https://www.gachon.ac.kr/english/) in 2013.
@@ -19,7 +25,7 @@ Since 2013, I've been working for [Samsung Research](https://research.samsung.co
 
 ## Links
 
-[1st blog](http://jinb-park.hashnode.dev) (english), [2nd blog](http://blog.daum.net/tlos6733) (korean), [GitHub](https://github.com/jinb-park), [LinkedIn](https://www.linkedin.com/in/jinbum-park-6040ba188/), [Google Scholar](https://scholar.google.com/citations?user=e-o2O2IAAAAJ), [Twitter](https://twitter.com/jinb_park), [Instagram](https://www.instagram.com/tlos6733/)
+[1st blog](http://jinb-park.github.io/blog) (english), [2nd blog](http://blog.daum.net/tlos6733) (korean), [GitHub](https://github.com/jinb-park), [LinkedIn](https://www.linkedin.com/in/jinbum-park-6040ba188/), [Google Scholar](https://scholar.google.com/citations?user=e-o2O2IAAAAJ), [Twitter](https://twitter.com/jinb_park), [Instagram](https://www.instagram.com/tlos6733/)
 
 ## Projects (@Samsung Research)
 

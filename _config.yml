@@ -1,7 +1,29 @@
-theme: jekyll-theme-slate
 title: Jinbum Park
-description: Security researcher & developer
+description: jinb.park7@gmail.com
+author: "Jinbum Park"
 url: https://jinb-park.github.io
+theme: minima
+base_url: /
+
+minima:
+  date_format: "%Y-%m-%d"
+
+# Minima: custom header links
+header_pages:
+  - _pages/blog.md
+  - _pages/index.md
+
+include:
+    - _pages
+
+exclude:
+    - .gitignore
+    - docker-compose.yml
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
+
 analytics:
   provider: "google"
   google:
