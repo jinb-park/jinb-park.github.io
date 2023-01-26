@@ -2,7 +2,7 @@ title: Jinbum Park
 description: jinb.park7@gmail.com
 author: "Jinbum Park"
 theme: minima
-url: https://jinb-park.github.io
+base_url: /
 
 minima:
   date_format: "%Y-%m-%d"
