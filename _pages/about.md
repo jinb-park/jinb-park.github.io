@@ -4,9 +4,11 @@ layout: page
 title: Home
 ---
 
-## Jinbum Park @Security Researcher
+# Security Researcher & Developer
+----
 
-## Research Interest
+# Research Interest
+----
 
 - System security
   - Trusted Execution Environments (TrustZone, SGX, Secure Processor)
@@ -16,18 +18,21 @@ title: Home
 - Privacy preserving deep learing (as known as federated learning)
 - __Zero Knowledge Proof and its applications(what I'm into nowdays)__
 
-## About me
+# About me
+----
 
 I'm one of (passionate) security researchers and developers.
 I got B.S degree in Department of Software at [Gachon University](https://www.gachon.ac.kr/english/) in 2013.
 Also, I was in [Samsung Software Membership](https://www.secmem.org/) (at Gangnam) from 2011 to 2013.
 Since 2013, I've been working for [Samsung Research](https://research.samsung.com/).
 
-## Links
+# Links
+----
 
 [1st blog](https://jinb-park.github.io/blog) (english), [2nd blog](https://blog.daum.net/tlos6733) (korean), [GitHub](https://github.com/jinb-park), [LinkedIn](https://www.linkedin.com/in/jinbum-park-6040ba188/), [Google Scholar](https://scholar.google.com/citations?user=e-o2O2IAAAAJ), [Twitter](https://twitter.com/jinb_park), [Instagram](https://www.instagram.com/tlos6733/)
 
-## Projects (@Samsung Research)
+# Projects
+----
 
 ### 2021-2022
 
@@ -55,7 +60,8 @@ Since 2013, I've been working for [Samsung Research](https://research.samsung.co
   - Developed Samsung DRM to protect sensitive contents
   - Used in Samsung Smart TV
 
-## Publications
+# Publications
+----
 
 ### 2022
 
@@ -101,7 +107,8 @@ Since 2013, I've been working for [Samsung Research](https://research.samsung.co
   - Jinmok Kim, Donguk Kim, Jinbum Park, Jihoon Kim, Hyoungshick Kim
   - Journal of The Korea Institute of Information Security & Cryptology VOL.25, NO.4, Aug. 2015
 
-## Talks (Industry conferences)
+# Talks (Industry conferences)
+----
 
 ### 2022
 
@@ -147,7 +154,8 @@ Since 2013, I've been working for [Samsung Research](https://research.samsung.co
   - Jinbum Park
   - Conference on Information Security and Cryptology. Winter 2012 (CISC-W'12)
 
-## Opensource Projects
+# Opensource Projects
+----
 
 - KSPP Study: Analysis on Kernel Self-Protection: Understanding Security and Performance Implication
   [[white paper](https://samsung.github.io/kspp-study/)]
@@ -155,7 +163,8 @@ Since 2013, I've been working for [Samsung Research](https://research.samsung.co
 - CSCA: Crypto Side Channel Attack
   [[code](https://github.com/jinb-park/crypto-side-channel-attack)]
 
-## Opensource Contributions
+# Opensource Contributions
+----
 
 ### Linux kernel (selected)
 
@@ -174,5 +183,6 @@ Since 2013, I've been working for [Samsung Research](https://research.samsung.co
   [patch-[0](https://git.launchpad.net/~ubuntu-kernel/ubuntu/+source/linux/+git/xenial/commit/?id=cb0321f01227), [1](https://git.launchpad.net/~ubuntu-kernel/ubuntu/+source/linux/+git/xenial/commit/?id=48a028480eb0)]
 
 ## Contact
+----
 
 - E-mail :  jinb.park7@gmail.com
