@@ -9,8 +9,8 @@ minima:
 
 # Minima: custom header links
 header_pages:
-  - _pages/blog.md
   - _pages/about.md
+  - _pages/blog.md
 
 include:
     - _pages
@@ -25,8 +25,8 @@ exclude:
     - robots.txt
     - sitemap.xml
 
-analytics:
-  provider: "google"
-  google:
-    tracking_id: "UA-171489496-1"
-    anonymize_ip: false
+#analytics:
+#  provider: "google"
+#  google:
+#    tracking_id: "UA-171489496-1"
+#    anonymize_ip: false
