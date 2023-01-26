@@ -26,8 +26,8 @@ exclude:
     - robots.txt
     - sitemap.xml
 
-#analytics:
-#  provider: "google"
-#  google:
-#    tracking_id: "UA-171489496-1"
-#    anonymize_ip: false
+analytics:
+  provider: "google"
+  google:
+    tracking_id: "UA-171489496-1"
+    anonymize_ip: false
