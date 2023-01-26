@@ -3,7 +3,6 @@ description: jinb.park7@gmail.com
 author: "Jinbum Park"
 url: https://jinb-park.github.io
 theme: minima
-base_url: /
 
 minima:
   date_format: "%Y-%m-%d"
