@@ -10,7 +10,7 @@ minima:
 # Minima: custom header links
 header_pages:
   - _pages/blog.md
-  - _pages/index.md
+  - _pages/about.md
 
 include:
     - _pages
