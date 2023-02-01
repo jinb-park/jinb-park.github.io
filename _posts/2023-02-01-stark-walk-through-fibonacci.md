@@ -6,7 +6,9 @@ layout: post
 
 ## Introduction
 
-This is my second post regarding [STARK](https://eprint.iacr.org/2018/046.pdf) (or zkSTARK). [The first one](https://jinb-park.github.io/2022/12/14/stark-fri-with-concrete-numbers-for-software-engineers.html) was about the FRI protocol which is central to the fast verification of STARK. With it, I tried to explain how FRI works through a concrete set of numbers but not how the whole STARK works. Here, I'm going to walk you through the intuitions behind STARK with the Fibonacci sequence example. By the time you finish reading this, hopefully, you might be able to chain them together (STARK and FRI) in your head. Of course, there have already been two great explanatory readings ([Vitalik's](https://vitalik.ca/general/2017/11/09/starks_part_1.html) and StarkWare's) that take Fibonacci as a working example. But, in my view, they are still somewhat superficial and lack of explanation for why it is designed that way. I lost my way several times when trying to grasp them and some questions were hanging over my head and never became clear. In this article, the explanation strategy I'm gonna take throughout this article is as follows: **(1)** introduce a problem that STARK wants to efficiently solve, **(2)** show a naive method to solve, **(3)** show what STARK does to get the method better in terms of either efficiency or security, **(4)** repeat until the method becomes identical to the actual STARK. Note that I will not show you the STARK protocol in entirety instead I'll focus on the intuitions to make it more efficient or secure. Plus, mostly my explanation consists of pseudo code or just texts instead of match equations.
+This is my second post regarding [STARK](https://eprint.iacr.org/2018/046.pdf) (or zkSTARK). [The first one](https://jinb-park.github.io/2022/12/14/stark-fri-with-concrete-numbers-for-software-engineers.html) was about the FRI protocol which is central to the fast verification of STARK. With it, I tried to explain how FRI works through a concrete set of numbers but not how the whole STARK works. Here, I'm going to walk you through the intuitions behind STARK with the Fibonacci sequence example. By the time you finish reading this, hopefully, you might be able to chain them together (STARK and FRI) in your head. Of course, there have already been two great explanatory readings ([Vitalik's](https://vitalik.ca/general/2017/11/09/starks_part_1.html) and StarkWare's) that take Fibonacci as a working example. But, in my view, they are still somewhat superficial and lack of explanation for why it is designed that way. I lost my way several times when trying to grasp them and some questions were hanging over my head and never became clear. In this article, the explanation strategy I'm gonna take throughout this article is as follows: **(1)** introduce a problem that STARK wants to efficiently solve, **(2)** show a naive method to solve, **(3)** show what STARK does to get the method better in terms of either efficiency or security, **(4)** repeat until the method becomes identical to the actual STARK. Note that I will not show you the STARK protocol in its entirety instead I'll focus on the intuitions to make it more efficient or secure. Also, mostly my explanation consists of pseudo code or just texts instead of match equations.
+
+PS: PoC codes that match this article are available at my [zero-knowledge-proof-example](https://github.com/jinb-park/zero-knowledge-proof-example) repo. They are written in python.
 
 ## A problem to solve
 
@@ -43,7 +45,7 @@ for i in range(len(Trace)-2):
 
 The problem is, in this way, it gets slower as the length of Trace rises. In other words, the verification would take a linearly increasing time according to the length of Trace. What we want to do here is **make the verification process as fast as possible**, by doing a probabilistic check. That means we can inspect only one point regardless of how large Trace is, which is a good thing in efficiency but not in security.
 Because, when the prover corrupts only one point and the verifier checks one random point, the attack gets caught with a very low probability, 1/8 to be exact (Trace contains 8 elements).
-Well, **how can we detect this attack with a high enough probability** in practice via a single check (or a small number of check)? This is what we'll get into in the following section.
+Well, **how can we detect this attack with a high enough probability** in practice via a single check (or a small number of checks)? This is what we'll get into in the following section.
 
 ## 2nd solution: probabilistic check in a larger domain
 
@@ -61,7 +63,7 @@ w_lde = get_root_of_unity(p, g, len(trace)*blowup) # we want a larger domain
 d_lde = get_domains(p, w_lde, len(trace)*blowup) # 8*16 = 128 elements
 ```
 
-The code above shows how to obtain two domains (d_trace and d_lde) considering a prime finite field (took 257 just for example. see [this post](https://jinb-park.github.io/2022/11/21/exploring-a-n-th-primitive-root-of-unity-over-finite-field-for-software-engineers.html) to find out more about n-th root of unity). As STARK requires to use finite field, we have to go this way to obtain domains.
+The code above shows how to obtain two domains (d_trace and d_lde) considering a prime finite field (took 257 just for example. see [this post](https://jinb-park.github.io/2022/11/21/exploring-a-n-th-primitive-root-of-unity-over-finite-field-for-software-engineers.html) to find out more about n-th root of unity). As STARK requires to use of the finite field, we have to go this way to obtain domains.
 
 Then, we interpolate "trace" into a polynomial and evaluate it over d_lde. It's also needed to evaluate constraints over d_lde. For the sake of simplicity, I'll take into account "transition constraint" only here.
 
@@ -106,7 +108,7 @@ To prevent this attack from happening, what we'll do is involve transition const
 2. **[verifier]** interpolate constraints into a polynomial, denoted as C'(x).
 3. **[verifier]** check if `degree(C'(x)) <= degree(T(x)) - degree(Z(x))` (i.e., `degree(C'(x)) <= 1`)
 
-This way, the prover is required to do more work (division by Z(x)) while the amount of work dedicated to the verifier is not changed. Despite this change, an attack with an arbitrarily generated C'(x) still could work out, because the prover can circumvent it by generating a poly of degree 1 and evaluating it and sending it to the verifier. That implies we still lack a way to check the T(x)-C'(x) relationship. *Consistency check* at an out-of-domain point comes to the rescue:
+This way, the prover is required to do more work (division by Z(x)) while the amount of work dedicated to the verifier is not changed. Despite this change, an attack with an arbitrarily generated C'(x) still could work out, because the prover can circumvent it by generating a poly of degree 1 and evaluating it, and sending it to the verifier. That implies we still lack a way to check the T(x)-C'(x) relationship. *Consistency check* at an out-of-domain point comes to the rescue:
 
 1. **[prover]** evaluating constraints (C'(x)) considering the respective zerofiier. (Z(x))
 2. **[verifier]** interpolate constraints into a polynomial, denoted as C'(x).
@@ -120,7 +122,7 @@ Well, are we done finally? Not yet. let's turn our focus to a matter of efficien
 
 ## 3rd solution: + faster low-degree testing
 
-There is some intentionally omitted efficiency matter in the last secure protocol I showed you. That is the verifier has to interpolate evaluation constraints into a polynomial to put the bounded degree check in practice. This brings on a linearly increasing time complexity upon the length of the trace, which is what we're trying to eliminate for efficiency. So, we need to figure out a way to make this low-degree testing faster, up to as fast as constant-level complexity. This is where [FRI](https://jinb-park.github.io/2022/12/14/stark-fri-with-concrete-numbers-for-software-engineers.html) comes into play. I'll not detail how FRI works here instead say what FRI brings to the table. Roughly speaking, FRI can speed up the last bound degree check:
+There is some intentionally omitted efficiency matter in the last secure protocol I showed you. That is the verifier has to interpolate evaluation constraints into a polynomial to put the bounded degree check into practice. This brings on a linearly increasing time complexity upon the length of the trace, which is what we're trying to eliminate for efficiency. So, we need to figure out a way to make this low-degree testing faster, up to as fast as constant-level complexity. This is where [FRI](https://jinb-park.github.io/2022/12/14/stark-fri-with-concrete-numbers-for-software-engineers.html) comes into play. I'll not detail how FRI works here instead say what FRI brings to the table. Roughly speaking, FRI can speed up the last bound degree check:
 
 1. **[prover]** evaluating constraints (C'(x)) and sending only *N evaluations* (*N* has nothing to do with the length of the trace) to the verifier.
 2. **[verifier]** do a consistency check at an out-of-domain point.
@@ -147,7 +149,7 @@ What we'll ultimately do is do a random linear combination of polynomials, which
     => degree(CO(x)) <= 6
 ```
 
-As you can see, different kinds of polynomials can have different degrees. So, we have to lift them to the same degree by using *adjustment degree*. For example, `CT(x)*x^4` yields `degree(CT(x)) <= 6` which is equivalent to the other two. You may wonder why this adjustment is needed because it seems that adding the three polynomials without adjustment leads to `degree(C(x)) <= 6` anyhow. This has to do with a security issue that can arise in no use of adjustment.
+As you can see, different kinds of polynomials can have different degrees. So, we have to lift them to the same degree by using *an adjustment degree*. For example, `CT(x)*x^4` yields `degree(CT(x)) <= 6` which is equivalent to the other two. You may wonder why this adjustment is needed because it seems that adding the three polynomials without adjustment leads to `degree(C(x)) <= 6` anyhow. This has to do with a security issue that can arise in no use of adjustment.
 
 Imagine a transition constraint gets violated, and then `degree(CT(x))` can become larger than 2 (assume it becomes 3). If no adjustment, a linear combination of these three polynomials becomes a poly of less than 6 and it will pass the verification check because the constraint violation won't get it to exceed degree 6.
 With adjustment degree, `degree(CT(x))` would go beyond degree 6, as a result, it can get caught.
@@ -159,13 +161,13 @@ Putting it all together, here's how it works (applying adjustment degree is omit
 3. **[verifier]** do a consistency check at an out-of-domain point.
 4. **[verifier]** invoke FRI. FRI can determine if `degree(C(x)) <= degree(T(x))`. (Note that more precisely this check statement is subject to change according to adjustment degree)
 
-Finally, we're done-! But, I should reiterate the fact that this article focuses on exploring the main intuitions used in STARK through a concrete example, instead of giving a ton of math equations that explains STARK as a whole. So, I have to admit that lots of details are not covered, that is to say if you're interested in building STARK from scratch or going over some existing STARK implementation, you would have to dig deeper into STARK. Here's a short (yet incomplete) list of what I omitted:
+Finally, we're done-! But, I should reiterate the fact that this article focuses on exploring the main intuitions used in STARK through a concrete example, instead of giving a ton of math equations that explains STARK as a whole. So, I have to admit that lots of details are not covered, that is to say, if you're interested in building STARK from scratch or going over some existing STARK implementation, you would have to dig deeper into STARK. Here's a short (yet incomplete) list of what I omitted:
 
-- how to build a single composition polynomial that associates between trace and constraint polynomial, which can render a separate consistency check unnecessary.
+- how to build a single composition polynomial that associates between trace and constraint polynomial, which can render separate consistency checks unnecessary.
 - the medium of sending N evaluations to the verifier. -> Merkle tree is heavily used throughout STARK for this purpose.
 - how a proof object comprises. --> What I mean by a proof object is all data needed to be passed on from the prover to the verifier. It requires a wide range of data but what I mentioned was a simplified one.
 - how to turn it into a non-interactive proof.
-- how to add zero-knowledge property, which means how to keep some of the traces secret. (see [this blog post](https://aszepieniec.github.io/stark-anatomy/stark#fn:1)'s "Adding Zero-Knowledge" part for it)
+- how to add a zero-knowledge property, which means how to keep some of the traces secret. (see [this blog post](https://aszepieniec.github.io/stark-anatomy/stark#fn:1)'s "Adding Zero-Knowledge" part for it)
 - perhaps more...
 
 ## Note: zkVM
