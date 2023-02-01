@@ -136,7 +136,7 @@ We're getting close to the end of this journey but not yet. I've mentioned so fa
 
 ## 4th solution: + random linear combination of polynomials
 
-This time, we aim to make three different polynomials into a single constraint polynomial so that doing the verification only once would be enough. Denote transition constraint polynomial and input boundary constraint polynomial and output boundary constraint polynomial as CT(x) and CI(x) and CO(x), respectively.
+This time, we aim to make three different polynomials into a single constraint polynomial so that it suffices to do the verification only once. Denote transition constraint polynomial and input boundary constraint polynomial and output boundary constraint polynomial as CT(x) and CI(x) and CO(x), respectively.
 What we'll ultimately do is do a random linear combination of polynomials, which looks like `C(x) = a*CT(x) + b*CI(x) + c*CO(x)` where a and b and c are a random constant value. (see [this post](https://jinb-park.github.io/2023/01/17/a-secure-random-linear-combination-of-polynomials.html) to get why random constants are necessary here) Like the degree constraint of CT(x), CI(x) and CO(x) have to be of less than a certain degree. Here are three different degree constraints:
 
 ```
