@@ -22,6 +22,7 @@ I'm one of (passionate) security researchers and developers.
 I got B.S degree in Department of Software at [Gachon University](https://www.gachon.ac.kr/english/) in 2013.
 Also, I was in [Samsung Software Membership](https://www.secmem.org/) (at Gangnam) from 2011 to 2013.
 Since 2013, I've been working for [Samsung Research](https://research.samsung.com/).
+Here is my [CV](jinbum-cv.pdf) which details each of what I've done so far.
 
 ## Links
 
