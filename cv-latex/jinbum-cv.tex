@@ -1,0 +1,571 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% A clean template for an academic CV
+%
+% Uses tabularx to create two column entries (date and job/edu/citation).
+% Defines commands to make adding entries simpler.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[10pt, a4paper]{article}
+
+% Full Unicode support for non-ASCII characters
+\usepackage[utf8]{inputenc}
+
+% Useful aliases
+\newcommand{\UERJ}{Universidade do Estado do Rio de Janeiro}
+\newcommand{\UHM}{University of Hawai`i at M\={a}noa}
+\newcommand{\SOEST}{School of Ocean and Earth Science and Technology}
+\newcommand{\UHEARTH}{Department of Earth Sciences}
+\newcommand{\LIVEARTH}{Department of Earth, Ocean and Ecological Sciences}
+\newcommand{\LIVENV}{School of Environmental Sciences}
+\newcommand{\LIV}{University of Liverpool}
+
+% Identifying information
+\newcommand{\Title}{Curriculum Vit\ae}
+\newcommand{\FirstName}{Jinbum}
+\newcommand{\LastName}{Park}
+\newcommand{\Initials}{L}
+\newcommand{\MyName}{\FirstName\ \LastName}
+\newcommand{\Me}{\textbf{\LastName, \Initials}}  % For citations
+\newcommand{\Email}{jinb.park7@gmail.com}
+\newcommand{\PersonalWebsite}{https://jinb-park.github.io}
+%\newcommand{\LabWebsite}{www.compgeolab.org}
+%\newcommand{\ORCID}{0000-0001-6123-9515}
+\newcommand{\Address}{
+  %Jane Herdman Building \\ 4 Brownlow Street \\ Liverpool, L69 3GP \\ United Kingdom
+  South Korea
+}
+
+% Names for citing coauthors
+\newcommand{\Val}{Barbosa, VCF}
+\newcommand{\Bi}{Oliveira Jr, VC}
+\newcommand{\Paul}{Wessel, P}
+\newcommand{\Joaquim}{Luis, J}
+\newcommand{\Remko}{Scharroo, R}
+\newcommand{\Florian}{Wobbe, F}
+\newcommand{\Walter}{Smith, WHF}
+\newcommand{\Dongdong}{Tian, D}
+\newcommand{\Bridget}{Smith-Konter, B}
+\newcommand{\Eric}{Xu, X}
+\newcommand{\David}{Sandwell, DT}
+\newcommand{\Carla}{Braitenberg, C}
+\newcommand{\Naomi}{Ussami, N}
+\newcommand{\Manoel}{D'Agrella-Filho, MS}
+\newcommand{\JB}{Silva, JBC}
+\newcommand{\Dai}{Sales, DP}
+\newcommand{\Figura}{Melo, FF}
+\newcommand{\Dio}{Carlos, DU}
+\newcommand{\BragaVale}{Braga, MA}
+\newcommand{\YLi}{Li, Y}
+\newcommand{\Angeli}{Angeli, G}
+\newcommand{\Peres}{Peres, G}
+\newcommand{\Everton}{Bomfim, EP}
+\newcommand{\Eder}{Molina, E}
+\newcommand{\Gomes}{Gomes, AAS}
+\newcommand{\Santiago}{Soler, SR}
+\newcommand{\Agustina}{Pesce, A}
+\newcommand{\Gimenez}{Gimenez, ME}
+\newcommand{\Kristoffer}{Hallam, KAT}
+\newcommand{\Guangdong}{Zhao, G}
+\newcommand{\Bo}{Chen, B}
+\newcommand{\JLiu}{Liu, J}
+\newcommand{\LChen}{Chen, L}
+\newcommand{\RGuo}{Guo, R}
+\newcommand{\MKaban}{Kaban, MK}
+\newcommand{\Lindsey}{Heagy, LJ}
+\newcommand{\Lion}{Krischer, L}
+\newcommand{\Rene}{Gassmoeller, R}
+\newcommand{\Bane}{Sullivan, CB}
+\newcommand{\Jens}{Klump, JF}
+\newcommand{\LBarba}{Barba, LA}
+\newcommand{\JBazan}{Bazan, J}
+\newcommand{\JBrown}{Brown, J}
+\newcommand{\RGuimera}{Guimera, RV}
+\newcommand{\MGymrek}{Gymrek, M}
+\newcommand{\AHanna}{Alex Hanna}
+\newcommand{\KHuff}{Huff, KD}
+\newcommand{\DKatz}{Katz, DS}
+\newcommand{\CMadan}{Madan, CR}
+\newcommand{\KMoerman}{Moerman, KM}
+\newcommand{\KNiemeyer}{Niemeyer, KE}
+\newcommand{\JPoulson}{Poulson, JL}
+\newcommand{\PPrins}{Prins, P}
+\newcommand{\KRam}{Ram, K}
+\newcommand{\ARokem}{Rokem, A}
+\newcommand{\Arfon}{Smith, AM}
+\newcommand{\GThiruvathukal}{Thiruvathukal, GK}
+\newcommand{\KThyng}{Thyng, KM}
+\newcommand{\BWilson}{Wilson, BE}
+\newcommand{\Yehudi}{Yehudi, Y}
+\newcommand{\Remi}{Rampin, R}
+\newcommand{\Hugo}{van Kemenade, H}
+\newcommand{\MattTurk}{Turk, M}
+\newcommand{\Shapero}{Shapero, D}
+\newcommand{\Anderson}{Banihirwe, A}
+\newcommand{\Leeman}{Leeman, J}
+\newcommand{\JEbbing}{Ebbing, J}
+\newcommand{\AGuy}{Guy, A}
+\newcommand{\JFarquharson}{Farquharson, J}
+\newcommand{\AKushnir}{Kushnir, A}
+\newcommand{\FWadsworth}{Wadsworth, F}
+\newcommand{\LPerozzi}{Perozzi, L}
+\newcommand{\MWieczorek}{Wieczorek, MA}
+\newcommand{\LLi}{Li, L}
+\newcommand{\Ricardo}{Trindade, RIF}
+
+
+% Template configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Disable hyphenation
+\usepackage[none]{hyphenat}
+
+% Control the font size
+\usepackage{anyfontsize}
+
+% Icon fonts (requires using xelatex or luatex)
+\usepackage[fixed]{fontawesome5}
+\usepackage{academicons}
+
+% Template variables for styling
+\newcommand{\TablePad}{\vspace{-0.4cm}}
+\newcommand{\SoftwareTitle}[1]{{\bfseries #1}}
+\newcommand{\TableTitle}[1]{{\fontsize{12pt}{0}\selectfont \itshape #1}}
+
+% For fancy and multipage tables
+\usepackage{tabularx}
+\usepackage{ltablex}
+
+% Define a new environment to place all CV entries in a 2-column table.
+% Left column are the dates, right column the entries.
+\usepackage{environ}
+\NewEnviron{EntriesTable}{
+\TablePad
+\begin{tabularx}{\textwidth}{@{}p{0.10\textwidth}@{\hspace{0.02\textwidth}}p{0.88\textwidth}@{}}
+  \BODY
+\end{tabularx}
+}
+\NewEnviron{EntriesTableExtra}{
+\TablePad
+\begin{tabularx}{\textwidth}{@{}p{0.10\textwidth}@{\hspace{0.02\textwidth}}p{0.79\textwidth}@{\hspace{0.02\textwidth}}>{\raggedright\arraybackslash}p{0.07\textwidth}}
+  \BODY
+\end{tabularx}
+}
+
+% Macros to add links and mark publications
+\newcommand{\DOI}[1]{doi:\href{https://doi.org/#1}{#1}}
+\newcommand{\DOILink}[1]{\href{https://doi.org/#1}{doi.org/#1}}
+\newcommand{\Website}[1]{\href{https://#1}{#1}}
+\newcommand{\Preprint}[1]{\href{https://doi.org/#1}{\faFilePdf}}
+\newcommand{\Paper}[1]{\href{#1}{\faFilePdf}}
+\newcommand{\Youtube}[1]{\href{https://www.youtube.com/watch?v=#1}{\faYoutube}}
+\newcommand{\GitHub}[1]{\href{https://github.com/#1}{\faGithub}}
+\newcommand{\GitHubPage}[1]{\href{#1}{\faGithub}}
+\newcommand{\Data}[1]{\href{https://doi.org/#1}{\faChartLine}}
+\newcommand{\Slides}[1]{\href{https://#1}{\faTv}}
+\newcommand{\Video}[1]{\href{#1}{\faYoutube}}
+\newcommand{\SlidesDOI}[1]{\href{https://doi.org/#1}{\faTv}}
+\newcommand{\PosterDOI}[1]{\href{https://doi.org/#1}{\faImage}}
+\newcommand{\OA}{\thinspace\aiOpenAccess\enspace}
+
+% Macros to set the year and duration on the left column
+\newcommand{\Duration}[2]{\fontsize{9pt}{0}\selectfont #1 -- #2}
+\newcommand{\Year}[1]{\fontsize{9pt}{0}\selectfont #1}
+\newcommand{\Ongoing}{on}
+\newcommand{\Future}{future}
+\newcommand{\Appointment}[4]{\textbf{#1} \newline #2 \newline #3 \newline #4}
+
+% Define command to insert month name and year as date
+\usepackage{datetime}
+\newdateformat{monthyear}{\monthname[\THEMONTH], \THEYEAR}
+
+% Set the page margins
+\usepackage[a4paper,margin=1.5cm,includehead,headsep=5mm]{geometry}
+
+% To get the total page numbers (\pageref{LastPage})
+\usepackage{lastpage}
+
+% No indentation
+\setlength\parindent{0cm}
+
+% Increase the line spacing
+\renewcommand{\baselinestretch}{1.2}
+% and the spacing between rows in tables
+\renewcommand{\arraystretch}{1.5}
+
+% Remove space between items in itemize and enumerate
+\usepackage{enumitem}
+\setlist{nosep}
+
+% Use custom colors
+\usepackage[usenames,dvipsnames]{xcolor}
+
+% Set fonts (requires compilation with xelatex)
+\usepackage{fontspec}
+\setmainfont[%
+  Path = fonts/notoserif/,
+  UprightFont = NotoSerif-Regular,
+  BoldFont = NotoSerif-Bold,
+  ItalicFont = NotoSerif-Italic,
+  Extension = .ttf
+]{NotoSerif}
+
+
+
+% Set the spacing for sections
+\usepackage{titlesec}
+\titleformat{\section}
+  {\normalfont\Large\mdseries} % format
+  {} % label
+  {0pt} % separation (left separation for hang)
+  {} % text before title
+  [\titlerule] % text after title
+\titleformat{\subsection}
+  {\normalfont\large\mdseries} % format
+  {} % label
+  {0pt} % separation (left separation for hang)
+  {} % text before title
+
+% Disable number of sections. Use this instead of "section*" so that the sections still
+% appear as PDF bookmarks. Otherwise, would have to add the table of contents entries
+% manually.
+\makeatletter
+\renewcommand{\@seccntformat}[1]{}
+\makeatother
+
+% Set fancy headers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+%\lhead{\fontsize{9pt}{10pt}\selectfont
+%  \monthyear\today
+%}
+\lhead{
+  \fontsize{9pt}{10pt}\selectfont
+  \MyName
+  \hspace{0.2cm} -- \hspace{0.2cm}
+  \Title
+}
+\rhead{\fontsize{9pt}{10pt}\selectfont \thepage{} of \pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+
+% Metadata for the PDF output and control of hyperlinks
+\usepackage[colorlinks=true]{hyperref}
+\hypersetup{
+  pdftitle={\MyName\ - \Title},
+  pdfauthor={\MyName},
+  linkcolor=blue,
+  citecolor=blue,
+  filecolor=black,
+  urlcolor=MidnightBlue
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+% No header for the first page
+\thispagestyle{empty}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{minipage}[t]{0.7\textwidth}
+{\fontsize{22pt}{0}\selectfont\MyName}
+\end{minipage}
+%\begin{minipage}[t]{0.3\textwidth}
+%  \begin{flushright}
+%    Last updated: \monthyear\today
+%  \end{flushright}
+%\end{minipage}
+\\[-0.1cm]
+\rule{\textwidth}{2pt}
+\\[0.1cm]
+\begin{minipage}[t]{0.7\textwidth}
+    Email: \href{mailto:\Email}{\Email}
+    \\
+    Affiliation: \href{https://research.samsung.com/security_privacy}{Samsung Research, Security \& Privacy Team}
+    \\
+    Website: \Website{\PersonalWebsite}
+    \\
+    Blog: \Website{https://jinb-park.github.io/blog}
+    \\
+    Google Scholar: \href{https://scholar.google.com/citations?user=e-o2O2IAAAAJ}{https://scholar.google.com/citations?user=e-o2O2IAAAAJ}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+  \begin{flushright}
+    \Address
+  \end{flushright}
+\end{minipage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Research Interest}
+
+\begin{itemize}
+  \item Trusted execution environments (TrustZone, SGX, Secure processors)
+  \item OS kernel security
+  \item Side-channel attacks and defenses
+  \item Bug finding and exploitaitons
+  \item Privacy-preserving deep learning (as known as federated learning)
+  \item Zero-Knowledge Proof and its applications (zkSNARK and zkSTARK)
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education}
+
+\begin{EntriesTable}
+  \Duration{2006}{2013}  &
+  \textbf{BSc in Department of Software}, Gachon University, South Korea
+\end{EntriesTable}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Projects}
+
+All projects listed below were done in Samsung Research.
+\newline
+
+\begin{EntriesTable}
+  \Duration{2023}{\Ongoing}  &
+  a period of time for parental leave
+  \\
+  \Duration{2021}{2022}  &
+  \textbf{A federated learning framework for mobile devices}
+  \begin{itemize}
+    \item \textbf{Role.} Lead developer
+    \item \textbf{Type.} Proof-of-concept project (not deployed in production)
+    \item Developed an android-based (Java) on-device federated learning framework built on top of a TensorFlowLite library modified to be able to do training on devices.
+    \item Developed a federated learning server (Python) that communicates with devices through gRPC.
+    \item Did a field test with 20 android devices on a location-based service deep learning model.
+  \end{itemize}
+  \\
+  \Duration{2020}{2021}  &
+  \textbf{Rust-based full-stack OS for secure processor}
+  \begin{itemize}
+    \item \textbf{Role.} Lead kernel developer and one of the application layer developers
+    \item \textbf{Type.} In development while aiming to be in production (but not yet released)
+    \item Developed a Rust-based kernel from scratch, which targets ARM Cortex-M boards and doesn't rely on Rust's std library.
+    \item Developed an application layer (a set of system calls and libraries) and an async backend that allows applications to use Rust's async capability.
+  \end{itemize}
+  \\
+  \Duration{2019}{2020}  &
+  \textbf{A TrustZone-based secure enclave}
+  \begin{itemize}
+    \item \textbf{Role.} Lead developer (one-man project)
+    \item \textbf{Type.} Proof-of-concept project (not deployed in production)
+    \item Designed and developed an SGX-like enclave architecture on top of ARM TrustZone, thereby allowing mobile developers to take SGX's programming model. (Rust and C++)
+    \item Developed a new small Rust compiler toolchain for this architecture.
+  \end{itemize}
+  \\
+  \Duration{2018}{2019}  &
+  \textbf{A real-time kernel protection}
+  \begin{itemize}
+    \item \textbf{Role.} One of the core developers
+    \item \textbf{Type.} Developed for autonomous platforms but not deployed
+    \item Designed and developed a Type-1 hypervisor on ARMv8-A, which ensures that Linux's non-writable memory regions are not corrupted. This is similar in concept to \href{https://www.samsungknox.com/en/blog/real-time-kernel-protection-rkp}{KNOX RKP} in galaxy devices.
+    \item Written in C and ARM assembly.
+  \end{itemize}
+  \\
+  \Duration{2014}{2017}  &
+  \textbf{System Integrity Monitor (SIM) version 1.0--3.0}
+  \begin{itemize}
+    \item \textbf{Role.} Lead developer
+    \item \textbf{Type.} Deployed as the key part of \href{https://news.samsung.com/global/samsung-electronics-announces-gaia-a-powerful-smart-tv-security-solution-for-2016-and-beyond}{GAIA} which is Samsung SMART TV's security solution.
+    \item Designed and developed a Linux kernel monitoring system that utilizes ARM TrustZone and a proprietary memory bus snooping system.\
+      It aims to prevent and detect corruptions on non-writable memory regions and security-critical kernel read-write data. Also, it plays a crucial role in the secure boot and attestations of Samsung SMART TVs. (C and C++)
+    \item Developed device drivers for Linux kernel and TrustZone secure kernel. (C and ARM assembly)
+    \item Developed a daemon service that runs as a system service of the Tizen TV platform and takes local/remote attestation requests from other processes. (C++)
+    \item Designed PKI (Public Key Infrastructure) and cryptographic key operations for this system.
+    \item Designed attestation servers and supported server developers.
+  \end{itemize}
+  \\
+  \Duration{2013}{2014}  &
+  \textbf{Samsung DRM (SDRM)}
+  \begin{itemize}
+    \item \textbf{Role.} Associate developer
+    \item \textbf{Type.} Depolyed in Samsung SMART TVs to protect 4k contents.
+    \item Migrated the existing SDRM codes into ARM TrustZone. (C and C++)
+    \item Developed the SDRM media plugin for the Tizen TV platform.
+    \item Managed PKI (Public Key Infrastructure) and cryptographic key operations for this system.
+  \end{itemize}
+\end{EntriesTable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Publications}
+
+\begin{EntriesTable}
+  \Year{2022} &
+  In-Kernel Control-Flow Integrity on Commodity OSes using ARM Pointer Authentication \Paper{https://www.usenix.org/system/files/sec22-yoo.pdf} \GitHub{SamsungLabs/PALinux}
+  \begin{itemize}
+    \item Sungbae Yoo(*), \textbf{Jinbum Park(*)}, Seolheui Kim, Yeji Kim, Taesoo Kim (*: co-leading authors)
+    \item The 31st USENIX Security Symposium (USENIX Security 2022) (\emph{top-tier conference})
+  \end{itemize}
+  \\
+  \Year{2022} &
+  ViK: Practical Mitigation of Temporal Memory Safety Violations through Object ID Inspection \Paper{https://dl.acm.org/doi/10.1145/3503222.3507780}
+  \begin{itemize}
+    \item Haehyun Cho, \textbf{Jinbum Park}, Adam Oest, Tiffany Bao, Ruoyu Wang, Yan Shoshitaishvili, Adam Doupé, Gail-Joon Ahn
+    \item The 27th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS ‘22) (\emph{top-tier conference})
+  \end{itemize}
+  \\
+  \Year{2020} &
+  Exploiting Uses of Uninitialized Stack Variables in Linux Kernels to Leak Kernel Pointers \Paper{https://www.usenix.org/system/files/woot20-paper-cho.pdf} \GitHub{jinb-park/leak-kptr}
+  \begin{itemize}
+    \item Haehyun Cho, \textbf{Jinbum Park}, Joonwon Kang, Tiffany Bao, Ruoyu Wang, Yan Shoshitaishvili, Adam Doupe, Gail-Joon Ahn
+    \item The 14th USENIX Workshop on Offensive Technologies (WOOT ‘20)
+  \end{itemize}
+  \\
+  \Year{2020} &
+  SmokeBomb: Effective Mitigation Method against Cache Side-channel Attacks on the ARM Architecture \Paper{https://dl.acm.org/doi/pdf/10.1145/3386901.3388888} \GitHub{SamsungLabs/smoke-bomb}
+  \begin{itemize}
+    \item Haehyun Cho, \textbf{Jinbum Park}, Donguk Kim, Ziming Zhao, Yan Shoshitaishvili, Adam Doupe, Gail-Joon Ahn
+    \item The 18th ACM International Conference on Mobile Systems, Applications, and Services (MobiSys 2020) (\emph{top-tier conference})
+  \end{itemize}
+  \\
+  \Year{2018} &
+  Prime+Count: Novel Cross-world Covert Channels on ARM TrustZone \Paper{https://dl.acm.org/doi/10.1145/3274694.3274704} \GitHub{SamsungLabs/prime-count}
+  \begin{itemize}
+    \item Haehyun Cho, Penghui Zhang, Donguk Kim, \textbf{Jinbum Park}, Choong-Hoon Lee, Ziming Zhao, Adam Doupé, and Gail-Joon Ahn
+    \item Annual Computer Security Applications Conference (ACSAC) 2018
+  \end{itemize}
+  \\
+  \Year{2016} &
+  A Snoop-Based Kernel Introspection System against Address Translation Redirection Attack
+  \begin{itemize}
+    \item Donguk Kim, Jihoon Kim, \textbf{Jinbum Park}, Jinmok Kim
+    \item Journal of The Korea Institute of Information Security \& Cryptology VOL.26, NO.5, Oct. 2016
+  \end{itemize}
+  \\
+  \Year{2015} &
+  An Efficient Kernel Introspection System using a Secure Timer on TrustZone
+  \begin{itemize}
+    \item Jinmok Kim, Donguk Kim, \textbf{Jinbum Park}, Jihoon Kim, Hyoungshick Kim
+    \item Journal of The Korea Institute of Information Security \& Cryptology VOL.25, NO.4, Aug. 2015
+  \end{itemize}
+
+\end{EntriesTable}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Talks (industry conferences)}
+
+\begin{EntriesTable}
+  \Year{2022} &
+  Taking Kernel Hardening to the Next Level \Slides{i.blackhat.com/Asia-22/Friday-Materials/AS-22-Park-Taking-Kernel-Hardening-to-the-Next-Level.pdf} \Video{https://www.youtube.com/watch?v=1titzBiuxSc}
+  \begin{itemize}
+    \item \textbf{Jinbum Park}, Haehyun Cho, Sungbae Yoo, Seolheui Kim, Yeji Kim, Bumhan Kim, Taesoo Kim
+    \item Blackhat ASIA 2022
+  \end{itemize}
+  \\
+  \Year{2020} &
+  Cache Attacks on Various CPU Architectures \Slides{jinb-park.github.io/cache-attack-poc2020-r2.pdf} \Video{https://drive.google.com/file/d/1sqasfokB0LkGUvpo_G-z0XNODu4EJkJM/view}
+  \begin{itemize}
+    \item \textbf{Jinbum Park}
+    \item POC 2020
+  \end{itemize}
+  \\
+  \Year{2019} &
+  Micro-architectural attack and defense on Linux kernel \Slides{www.ssdc.kr/content/data/session/Day\%201_1630_2.pdf}
+  \begin{itemize}
+    \item \textbf{Jinbum Park}, Joonwon Kang
+    \item Samsung Open Source Conference (SOSCON) 2019
+  \end{itemize}
+  \\
+  \Year{2019} &
+  Leak kernel pointer by exploiting uninitialized uses in Linux kernel \Slides{jinb-park.github.io/leak-kptr.pdf} \GitHub{jinb-park/leak-kptr}
+  \begin{itemize}
+    \item \textbf{Jinbum Park}
+    \item Zer0Con 2019
+  \end{itemize}
+  \\
+  \Year{2018} &
+  Attack and Defense on Linux kernel \GitHub{jinb-park/linux-exploit}
+  \begin{itemize}
+    \item \textbf{Jinbum Park}
+    \item Samsung Open Source Conference (SOSCON) 2018
+  \end{itemize}
+  \\
+  \Year{2018} &
+  Exploit Linux kernel eBPF with side-channel \Slides{jinb-park.github.io/Exploit-Linux-kernel-eBPF-with-side-channel.html} \GitHub{jinb-park/linux-exploit}
+  \begin{itemize}
+    \item \textbf{Jinbum Park}
+    \item KIMCHICON 2018
+  \end{itemize}
+\end{EntriesTable}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Open sources}
+
+\begin{EntriesTable}
+  \Year{-} &
+  KSPP Study: Analysis on Kernel Self-Protection: Understanding Security and Performance Implication \GitHubPage{https://samsung.github.io/kspp-study/}
+  \begin{itemize}
+    \item Analyzed security and performance analysis for kernel self-protection projects
+  \end{itemize}
+  \\
+  \Year{-} &
+  CSCA: Crypto Side Channel Attack \GitHub{jinb-park/crypto-side-channel-attack}
+  \begin{itemize}
+    \item Developed cache-based crypto side-channel attacks on both x86\_64 and ARM64 (e.g., recovering a full AES-128 key)
+  \end{itemize}
+  \\
+  \Year{-} &
+  Linux kernel contributions (selected)
+  \begin{itemize}
+    \item Fix vulnerable gadgets to spectre-variant1 attack (patch \href{https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=55690c07b44a}{0},\href{https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=3a2af7cccbba}{1})
+    \item arm: Makes ptdump reusable and add WX page checking (\href{https://lkml.org/lkml/2017/12/7/321}{patch})
+    \item arm: Add ARCH\_HAS\_FORTIFY\_SOURCE (patch \href{https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=73b9160d0dfe}{0},\href{https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=ee333554fed5}{1})
+  \end{itemize}
+  \\
+  \Year{-} &
+  Ubuntu kernel contributions
+  \begin{itemize}
+    \item Revert barrier-patch which turns out be vulnerable to variant4 attack (patch \href{https://git.launchpad.net/~ubuntu-kernel/ubuntu/+source/linux/+git/xenial/commit/?id=cb0321f01227}{0},\href{https://git.launchpad.net/~ubuntu-kernel/ubuntu/+source/linux/+git/xenial/commit/?id=48a028480eb0}{1})
+  \end{itemize}
+\end{EntriesTable}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Skills}
+
+\textbf{Languages.} 
+\begin{itemize}
+  \item Korean, English
+\end{itemize}
+
+\textbf{Programming Languages.}
+\begin{itemize}
+  \item C, C++, Python, Rust, Assembly (x86\_64 and ARM)
+\end{itemize}
+
+\textbf{Hardware.}
+\begin{itemize}
+  \item ARM: ARM Cortex-A, ARM Cortex-M, ARM TrustZone, ARM pointer authentication, ARM memory tagging extension
+  \item Intel: x86\_64, SGX
+  \item Developed several security-relevant arch-specific codes and cache attacks/defenses on both architectures.
+\end{itemize}
+
+\textbf{Low-level software.}
+\begin{itemize}
+  \item Kernel: Linux, FreeBSD
+  \item Hypervisor: KVM
+\end{itemize}
+
+\textbf{Compiler.}
+\begin{itemize}
+  \item LLVM, GCC (developed several static analysis passes on LLVM and GCC)
+\end{itemize}
+
+\textbf{Domain knowledge.}
+\begin{itemize}
+  \item System and software security 
+  \item Operating system kernel and hardware architectures
+  \item Mobile platforms (Tizen and Android)
+  \item Applied cryptography
+  \item Machine learning and deep learning
+  \item Zero-Knowledge Proof
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
