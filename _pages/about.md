@@ -9,12 +9,12 @@ title: Home
 ## Research Interest  
 
 - System security
-  - Trusted Execution Environments (TrustZone, SGX, Secure Processor)
+  - Trusted Execution Environments (TrustZone, ARM CCA, SGX, Secure Processor) and confidential computing
   - OS Security
   - Side-channel attacks and defenses
   - Bug finding and Exploitations
-- Privacy preserving deep learing (as known as federated learning)
-- __Zero Knowledge Proof and its applications(what I'm into nowdays)__
+- Machine learning security (e.g., federated learning, LLM security)
+- Applied cryptography (e.g., Zero Knowledge Proof)
 
 ## About me
 
@@ -26,9 +26,13 @@ Here is my [CV](jinbum-cv.pdf) which details each of what I've done so far.
 
 ## Links
 
-[1st blog](https://jinb-park.github.io/blog) (english), [2nd blog](https://blog.daum.net/tlos6733) (korean), [GitHub](https://github.com/jinb-park), [LinkedIn](https://www.linkedin.com/in/jinbum-park-6040ba188/), [Google Scholar](https://scholar.google.com/citations?user=e-o2O2IAAAAJ), [Twitter](https://twitter.com/jinb_park), [Instagram](https://www.instagram.com/tlos6733/)
+[blog](https://jinb-park.github.io/blog), [GitHub](https://github.com/jinb-park), [LinkedIn](https://www.linkedin.com/in/jinbum-park-6040ba188/), [Google Scholar](https://scholar.google.com/citations?user=e-o2O2IAAAAJ), [Instagram](https://www.instagram.com/tlos6733/)
 
 ## Projects
+
+#### 2023-present
+
+- Islet: An on-device confidential computing platform (based on ARM CCA) [[code](https://github.com/islet-project/islet)]
 
 #### 2021-2022
 
@@ -103,6 +107,12 @@ Here is my [CV](jinbum-cv.pdf) which details each of what I've done so far.
   - Journal of The Korea Institute of Information Security & Cryptology VOL.25, NO.4, Aug. 2015
 
 ## Talks (Industry conferences)
+
+#### 2024
+
+- Breaking ARM MTE with Speculative Execution
+  - Jinbum Park
+  - Zer0Con 2024
 
 #### 2022
 
