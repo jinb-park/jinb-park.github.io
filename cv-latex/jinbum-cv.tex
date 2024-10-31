@@ -300,12 +300,13 @@
 \section{Research Interest}
 
 \begin{itemize}
-  \item Trusted execution environments (TrustZone, SGX, Secure processors)
+  \item Trusted execution environments (TrustZone, ARM CCA, SGX, Secure processors)
+  \item Confidential computing
   \item OS kernel security
   \item Side-channel attacks and defenses
-  \item Bug finding and exploitaitons
-  \item Privacy-preserving deep learning (as known as federated learning)
-  \item Zero-Knowledge Proof and its applications (zkSNARK and zkSTARK)
+  \item Bug finding and exploitations
+  \item Machine learning security (e.g., federated learning, LLM security)
+  \item Applied cryptography (e.g., Zero Knowledge Proof)
 \end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -325,7 +326,18 @@ All projects listed below were done in Samsung Research.
 \newline
 
 \begin{EntriesTable}
-  \Duration{2023}{\Ongoing}  &
+  \Duration{2023.04}{\Ongoing}  &
+  \textbf{Islet: An on-device confidential computing platform}
+  \begin{itemize}
+    \item \textbf{Role.} A developer and researcher
+    \item \textbf{Type.} Open source project (\href{https://confidentialcomputing.io/projects/current-projects/}{an official Confidential Computing Consortium (CCC) project})
+    \item Developing a whole software stack, fully written in Rust, to power ARM CCA. (based on the ARM CCA specification)
+    \item Developed an end-to-end confidential AI demo scenario (for details, see \href{https://github.com/islet-project/islet/tree/main/examples/confidential-ml}{here}).
+    \item Implemented an integration with \href{https://github.com/ccc-certifier-framework/certifier-framework-for-confidential-computing}{the certifier framework} to build an end-to-end heterogeneous CC (Confidential Computing) protection.
+    \item An academic research towards privacy-preserving CC framework (work in progress internally as a leading author).
+  \end{itemize}
+  \\
+  \Duration{2022.05}{2023.04}  &
   a period of time for parental leave
   \\
   \Duration{2021}{2022}  &
@@ -333,7 +345,7 @@ All projects listed below were done in Samsung Research.
   \begin{itemize}
     \item \textbf{Role.} Lead developer
     \item \textbf{Type.} Proof-of-concept project (not deployed in production)
-    \item Developed an android-based (Java) on-device federated learning framework built on top of a TensorFlowLite library modified to be able to do training on devices.
+    \item Developed an android based (Java) on-device federated learning framework built on top of a TensorFlowLite library modified to be able to do training on devices.
     \item Developed a federated learning server (Python) that communicates with devices through gRPC.
     \item Did a field test with 20 android devices on a location-based service deep learning model.
   \end{itemize}
@@ -382,7 +394,7 @@ All projects listed below were done in Samsung Research.
   \textbf{Samsung DRM (SDRM)}
   \begin{itemize}
     \item \textbf{Role.} Associate developer
-    \item \textbf{Type.} Depolyed in Samsung SMART TVs to protect 4k contents.
+    \item \textbf{Type.} Deployed in Samsung SMART TVs to protect 4k contents.
     \item Migrated the existing SDRM codes into ARM TrustZone. (C and C++)
     \item Developed the SDRM media plugin for the Tizen TV platform.
     \item Managed PKI (Public Key Infrastructure) and cryptographic key operations for this system.
@@ -393,6 +405,20 @@ All projects listed below were done in Samsung Research.
 \section{Publications}
 
 \begin{EntriesTable}
+  \Year{2024} &
+  TikTag: Breaking ARM’s Memory Tagging Extension with Speculative Execution
+  \begin{itemize}
+    \item under review (I am the second author of this paper)
+    \item in a nutshell: it discovered two side-channel vulnerabilities, in Pixel 8, that allow attackers to bypass MTE. They are confirmed by the android security team as a hardware flaw.
+  \end{itemize}
+  \\
+  \Year{2024} &
+  PeTAL: Ensuring Access Control Integrity against Data-only Attacks on Linux
+  \begin{itemize}
+    \item under review (I am the second author of this paper)
+    \item in a nutshell: a kernel hardening technique against data-only attacks, leveraging both ARM PAC and MTE
+  \end{itemize}
+  \\
   \Year{2022} &
   In-Kernel Control-Flow Integrity on Commodity OSes using ARM Pointer Authentication \Paper{https://www.usenix.org/system/files/sec22-yoo.pdf} \GitHub{SamsungLabs/PALinux}
   \begin{itemize}
@@ -449,6 +475,13 @@ All projects listed below were done in Samsung Research.
 \section{Talks (industry conferences)}
 
 \begin{EntriesTable}
+  \Year{2024} &
+  Breaking ARM MTE with Speculative Execution
+  \begin{itemize}
+    \item \textbf{Jinbum Park}
+    \item Zer0Con 2024
+  \end{itemize}
+  \\
   \Year{2022} &
   Taking Kernel Hardening to the Next Level \Slides{i.blackhat.com/Asia-22/Friday-Materials/AS-22-Park-Taking-Kernel-Hardening-to-the-Next-Level.pdf} \Video{https://www.youtube.com/watch?v=1titzBiuxSc}
   \begin{itemize}
@@ -540,7 +573,7 @@ All projects listed below were done in Samsung Research.
 
 \textbf{Hardware.}
 \begin{itemize}
-  \item ARM: ARM Cortex-A, ARM Cortex-M, ARM TrustZone, ARM pointer authentication, ARM memory tagging extension
+  \item ARM: ARM Cortex-A, ARM Cortex-M, ARM TrustZone, ARM CCA, ARM pointer authentication, ARM memory tagging extension
   \item Intel: x86\_64, SGX
   \item Developed several security-relevant arch-specific codes and cache attacks/defenses on both architectures.
 \end{itemize}
@@ -548,7 +581,7 @@ All projects listed below were done in Samsung Research.
 \textbf{Low-level software.}
 \begin{itemize}
   \item Kernel: Linux, FreeBSD
-  \item Hypervisor: KVM
+  \item Hypervisor: KVM, a light-weight security monitor (e.g., RMM in ARM CCA)
 \end{itemize}
 
 \textbf{Compiler.}
@@ -560,6 +593,7 @@ All projects listed below were done in Samsung Research.
 \begin{itemize}
   \item System and software security 
   \item Operating system kernel and hardware architectures
+  \item Offensive techniques (kernel exploits and bug findings)
   \item Mobile platforms (Tizen and Android)
   \item Applied cryptography
   \item Machine learning and deep learning
