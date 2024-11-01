@@ -15,6 +15,8 @@ header_pages:
 
 include:
     - _pages
+    - robots.txt
+    - sitemap.xml
 
 exclude:
     - .gitignore
@@ -23,8 +25,6 @@ exclude:
     - Gemfile.lock
     - LICENSE
     - README.md
-    - robots.txt
-    - sitemap.xml
 
 analytics:
   provider: "google"
