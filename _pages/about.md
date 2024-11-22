@@ -62,7 +62,17 @@ Here is my [CV](jinbum-cv.pdf) which details each of what I've done so far.
 
 ## Publications
 
-#### 2022
+- EdgeShield: A Security Monitor Framework For On-Device Confidential Computing
+  - Jinbum Park, Bokdeuk Jeong, Sunwook Eom, Taesoo Kim
+  - Under submission
+
+- TikTag: Breaking ARM's Memory Tagging Extension with Speculative Execution [[paper](https://arxiv.org/abs/2406.08719)]
+  - Juhee Kim, Jinbum Park, Sihyeon Roh, Jaeyoung Chung, Youngjoo Lee, Taesoo Kim, Byoungyoung Lee
+  - 46th IEEE Symposium on Security and Privacy (IEEE S&P 2025) (to appear)
+
+- PeTAL: Ensuring Access Control Integrity against Data-only Attacks on Linux
+  - Juhee Kim, Jinbum Park, Yoochan Lee, Chengyu Song, Taesoo Kim, Byoungyoung Lee
+  - ACM CCS 2024
 
 - ViK: Practical Mitigation of Temporal Memory Safety Violations through Object ID Inspection [[paper](https://dl.acm.org/doi/10.1145/3503222.3507780)]
   - Haehyun Cho, Jinbum Park, Adam Oest, Tiffany Bao, Ruoyu Wang, Yan Shoshitaishvili, Adam Doupé, Gail-Joon Ahn
@@ -72,8 +82,6 @@ Here is my [CV](jinbum-cv.pdf) which details each of what I've done so far.
   [[paper](https://arxiv.org/pdf/2112.07213.pdf), [code](https://github.com/SamsungLabs/PALinux)]
   - Sungbae Yoo(\*), Jinbum Park(\*), Seolheui Kim, Yeji Kim, Taesoo Kim (\*: co-leading authors)
   - The 31st USENIX Security Symposium (USENIX Security 2022)
-
-#### 2020
 
 - Exploiting Uses of Uninitialized Stack Variables in Linux Kernels to Leak Kernel Pointers
   [[paper](https://www.usenix.org/system/files/woot20-paper-cho.pdf), [code](https://github.com/jinb-park/leak-kptr)]
@@ -85,21 +93,15 @@ Here is my [CV](jinbum-cv.pdf) which details each of what I've done so far.
   - Haehyun Cho, Jinbum Park, Donguk Kim, Ziming Zhao, Yan Shoshitaishvili, Adam Doupe, Gail-Joon Ahn
   - The 18th ACM International Conference on Mobile Systems, Applications, and Services (MobiSys 2020)
 
-#### 2018
-
 - Prime+Count: Novel Cross-world Covert Channels on ARM TrustZone
   [[paper](http://www.public.asu.edu/~hcho67/papers/prime+count-acsac18.pdf), [code](https://github.com/samsung/prime-count)]
   - Haehyun Cho, Penghui Zhang, Donguk Kim, Jinbum Park, Choong-Hoon Lee, Ziming Zhao, Adam Doupé, and Gail-Joon Ahn
   - Annual Computer Security Applications Conference (ACSAC) 2018
 
-#### 2016
-
 - A Snoop-Based Kernel Introspection System against Address Translation Redirection Attack
   [[paper](http://www.dbpia.co.kr/Journal/ArticleDetail/NODE07047473)]
   - Donguk Kim, Jihoon Kim, Jinbum Park, Jinmok Kim
   - Journal of The Korea Institute of Information Security & Cryptology VOL.26, NO.5, Oct. 2016
-
-#### 2015
 
 - An Efficient Kernel Introspection System using a Secure Timer on TrustZone
   [[paper](http://www.dbpia.co.kr/Journal/ArticleDetail/NODE06505646)]
@@ -108,27 +110,23 @@ Here is my [CV](jinbum-cv.pdf) which details each of what I've done so far.
 
 ## Talks (Industry conferences)
 
-#### 2024
+- On-Device Confidential Computing: Updates on Our Activities and Future Potential [[video](https://youtu.be/YP2jFD9uPjk?si=Kn-K_ysCAf9K_SDA)]]
+  - Jinbum Park, Heeill Wang
+  - Samsung Security Tech Forum 2024 (SSTF 2024)
 
 - Breaking ARM MTE with Speculative Execution
   - Jinbum Park
   - Zer0Con 2024
-
-#### 2022
 
 - Taking Kernel Hardening to the Next Level
   [[slide](https://i.blackhat.com/Asia-22/Friday-Materials/AS-22-Park-Taking-Kernel-Hardening-to-the-Next-Level.pdf), [video](https://youtu.be/1titzBiuxSc)]
   - Jinbum Park, Haehyun Cho, Sungbae Yoo, Seolheui Kim, Yeji Kim, Bumhan Kim, Taesoo Kim
   - Blackhat ASIA 2022
 
-#### 2020
-
 - Cache Attacks on Various CPU Architectures
   [[slide](cache-attack-poc2020-r2.pdf), [video](https://drive.google.com/file/d/1sqasfokB0LkGUvpo_G-z0XNODu4EJkJM/view)]
   - Jinbum Park
   - POC 2020
-
-#### 2019
 
 - Micro-architectural attack and defense on Linux kernel
   [[slide](https://www.soscon.net/content/data/session/Day%201_1630_2.pdf)]
@@ -140,8 +138,6 @@ Here is my [CV](jinbum-cv.pdf) which details each of what I've done so far.
   - Jinbum Park
   - Zer0Con 2019
 
-#### 2018
-
 - Attack and Defense on Linux kernel
   [[slide](https://www.sosconhistory.net/soscon2018/pdf/day1_1330_3.pdf), [code](https://github.com/jinb-park/linux-exploit/tree/master/samples)]
   - Jinbum Park
@@ -151,8 +147,6 @@ Here is my [CV](jinbum-cv.pdf) which details each of what I've done so far.
   [[slide](Exploit-Linux-kernel-eBPF-with-side-channel.html), [code](https://github.com/jinb-park/linux-exploit)]
   - Jinbum Park
   - KIMCHICON 2018
-  
-#### 2012
 
 - Host-based DRDoS Defense Model proposed and implemented
   - Jinbum Park
@@ -186,4 +180,4 @@ Here is my [CV](jinbum-cv.pdf) which details each of what I've done so far.
 
 ## Contact
 
-- E-mail :  jinb.park7@gmail.com
+- E-mail : jinb.park7@gmail.com
