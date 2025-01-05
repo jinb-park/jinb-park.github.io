@@ -26,6 +26,12 @@ exclude:
     - LICENSE
     - README.md
 
+gems:
+    - jekyll-redirect-from
+
+whitelist:
+    - jekyll-redirect-from
+
 analytics:
   provider: "google"
   google:

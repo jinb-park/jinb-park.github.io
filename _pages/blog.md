@@ -1,6 +1,6 @@
 ---
 permalink: /blog
-layout: home
 title: Blog
-list_title: posts
+redirect_to: https://jinb-park.hashnode.dev
+layout: home
 ---
