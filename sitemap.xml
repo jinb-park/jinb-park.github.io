@@ -14,4 +14,22 @@
   <url>
       <loc>https://jinb-park.github.io/cache-attack-poc2020-r2.pdf</loc>
   </url>
+    <url>
+      <loc>https://jinb-park.github.io/2022/09/06/finite-field-for-developers.html</loc>
+  </url>
+  <url>
+      <loc>https://jinb-park.github.io/2022/11/21/exploring-a-n-th-primitive-root-of-unity-over-finite-field-for-software-engineers.html</loc>
+  </url>
+  <url>
+      <loc>https://jinb-park.github.io/2022/12/08/fiat-shamir-heuristic-in-the-eyes-of-attackers.html</loc>
+  </url>
+  <url>
+      <loc>https://jinb-park.github.io/2022/12/14/stark-fri-with-concrete-numbers-for-software-engineers.html</loc>
+  </url>
+  <url>
+      <loc>https://jinb-park.github.io/2023/01/17/a-secure-random-linear-combination-of-polynomials.html</loc>
+  </url>
+  <url>
+      <loc>https://jinb-park.github.io/2023/02/01/stark-walk-through-fibonacci.html</loc>
+  </url>
 </urlset>

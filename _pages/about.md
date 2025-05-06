@@ -26,7 +26,7 @@ Here is my [CV](jinbum-cv.pdf) which details each of what I've done so far.
 
 ## Links
 
-[blog](https://jinb-park.hashnode.dev), [GitHub](https://github.com/jinb-park), [LinkedIn](https://www.linkedin.com/in/jinbum-park-6040ba188/), [Google Scholar](https://scholar.google.com/citations?user=e-o2O2IAAAAJ), [Instagram](https://www.instagram.com/tlos6733/)
+[blog](https://jinb-park.github.io/blog), [GitHub](https://github.com/jinb-park), [LinkedIn](https://www.linkedin.com/in/jinbum-park-6040ba188/), [Google Scholar](https://scholar.google.com/citations?user=e-o2O2IAAAAJ), [Instagram](https://www.instagram.com/tlos6733/)
 
 ## Projects
 
