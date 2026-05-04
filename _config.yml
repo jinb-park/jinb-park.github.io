@@ -2,7 +2,7 @@ title: Jinbum Park
 description: jinb.park7@gmail.com
 author: "Jinbum Park"
 theme: minima
-base_url: /
+baseurl: ""
 
 minima:
   date_format: "%Y-%m-%d"
@@ -26,7 +26,7 @@ exclude:
     - LICENSE
     - README.md
 
-gems:
+plugins:
     - jekyll-redirect-from
 
 whitelist:
