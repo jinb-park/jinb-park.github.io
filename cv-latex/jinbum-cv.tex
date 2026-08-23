@@ -33,7 +33,7 @@
 %\newcommand{\ORCID}{0000-0001-6123-9515}
 \newcommand{\Address}{
   %Jane Herdman Building \\ 4 Brownlow Street \\ Liverpool, L69 3GP \\ United Kingdom
-  South Korea
+  Netherlands
 }
 
 % Names for citing coauthors
@@ -162,7 +162,7 @@
 \newcommand{\GitHub}[1]{\href{https://github.com/#1}{\faGithub}}
 \newcommand{\GitHubPage}[1]{\href{#1}{\faGithub}}
 \newcommand{\Data}[1]{\href{https://doi.org/#1}{\faChartLine}}
-\newcommand{\Slides}[1]{\href{https://#1}{\faTv}}
+\newcommand{\Slides}[1]{\href{#1}{\faTv}}
 \newcommand{\Video}[1]{\href{#1}{\faYoutube}}
 \newcommand{\SlidesDOI}[1]{\href{https://doi.org/#1}{\faTv}}
 \newcommand{\PosterDOI}[1]{\href{https://doi.org/#1}{\faImage}}
@@ -282,11 +282,11 @@
 \begin{minipage}[t]{0.7\textwidth}
     Email: \href{mailto:\Email}{\Email}
     \\
-    Affiliation: \href{https://research.samsung.com/security_privacy}{Samsung Research, Security \& Privacy Team}
+    Affiliation: \href{https://www.fairphone.com/}{Fairphone}
     \\
-    Website: \Website{\PersonalWebsite}
+    Website: \href{\PersonalWebsite}{https://jinb-park.github.io}
     \\
-    Blog: \Website{https://jinb-park.github.io/blog}
+    Blog: \href{https://jinb-park.github.io/blog}{https://jinb-park.github.io/blog}
     \\
     Google Scholar: \href{https://scholar.google.com/citations?user=e-o2O2IAAAAJ}{https://scholar.google.com/citations?user=e-o2O2IAAAAJ}
 \end{minipage}
@@ -300,22 +300,34 @@
 \section{Research Interest}
 
 \begin{itemize}
-  \item Trusted execution environments (TrustZone, ARM CCA, SGX, Secure processors)
+  \item Trusted execution environments (TrustZone, ARM CCA, Intel TDX, Secure processors)
   \item Confidential computing
   \item OS kernel security
   \item Side-channel attacks and defenses
   \item Bug finding and exploitations
-  \item Machine learning security (e.g., federated learning, LLM security)
+  \item AI security
   \item Applied cryptography (e.g., Zero Knowledge Proof)
 \end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Education}
+\section{Work Experience}
 
 \begin{EntriesTable}
-  \Duration{2006}{2013}  &
-  \textbf{BSc in Department of Software}, Gachon University, South Korea
+  \Duration{2026.08}{Present} &
+  \Appointment{Fairphone}{Product Security Officer}{Amsterdam, Netherlands}{}
+  \\
+  \Duration{2026.01}{2026.06} &
+  \Appointment{Samsung Research}{Principal Engineer}{Seoul, South Korea}{}
+  \\
+  \Duration{2019}{2025} &
+  \Appointment{Samsung Research}{Staff Engineer}{Seoul, South Korea}{}
+  \\
+  \Duration{2016}{2018} &
+  \Appointment{Samsung Research}{Senior Engineer}{Seoul, South Korea}{}
+  \\
+  \Duration{2013}{2015} &
+  \Appointment{Samsung Research}{Engineer}{Seoul, South Korea}{}
 \end{EntriesTable}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -326,7 +338,16 @@ All projects listed below were done in Samsung Research.
 \newline
 
 \begin{EntriesTable}
-  \Duration{2023.04}{\Ongoing}  &
+  \Duration{2025.01}{2026.06}  &
+  \textbf{A secure AI platform}
+  \begin{itemize}
+    \item \textbf{Role.} Tech lead (7 engineers involved, 2025.01--2025.12) and Part lead (18 engineers involved, 2025.12--2026.06)
+    \item \textbf{Type.} Open source project (it's going to become publicly available in the future)
+    \item Private information
+    \item Developed a security-focused Linux OS to run modern AI workloads
+  \end{itemize}
+  \\
+  \Duration{2023.05}{2024.12}  &
   \textbf{Islet: An on-device confidential computing platform}
   \begin{itemize}
     \item \textbf{Role.} A developer and researcher
@@ -482,6 +503,13 @@ All projects listed below were done in Samsung Research.
 \section{Talks (industry conferences)}
 
 \begin{EntriesTable}
+  \Year{2025} &
+  A Security Monitor Framework For On-Device Confidential Computing \Slides{https://drive.google.com/file/d/1eDtC00DiEhgcRQJlHUgPdlNHOiNWHEjl/view?usp=share_link} \Video{https://content-cdn.sessionboard.com/event-files/tJzfTYdlT1SMLqCw9NzX_Edgeshield_Video.mp4}
+  \begin{itemize}
+    \item \textbf{Jinbum Park}
+    \item Confidential Computing Summit 2025
+  \end{itemize}
+  \\
   \Year{2024} &
   On-Device Confidential Computing: Updates on Our Activities and Future Potential \Video{https://youtu.be/YP2jFD9uPjk?si=Kn-K_ysCAf9K_SDA}
   \begin{itemize}
@@ -575,7 +603,7 @@ All projects listed below were done in Samsung Research.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Skills}
 
-\textbf{Languages.} 
+\textbf{Languages.}
 \begin{itemize}
   \item Korean, English
 \end{itemize}
@@ -588,7 +616,7 @@ All projects listed below were done in Samsung Research.
 \textbf{Hardware.}
 \begin{itemize}
   \item ARM: ARM Cortex-A, ARM Cortex-M, ARM TrustZone, ARM CCA, ARM pointer authentication, ARM memory tagging extension
-  \item Intel: x86\_64, SGX
+  \item Intel: x86\_64, TDX
   \item Developed several security-relevant arch-specific codes and cache attacks/defenses on both architectures.
 \end{itemize}
 
@@ -605,14 +633,24 @@ All projects listed below were done in Samsung Research.
 
 \textbf{Domain knowledge.}
 \begin{itemize}
-  \item System and software security 
+  \item System and software security
   \item Operating system kernel and hardware architectures
+  \item Trusted execution environment (TEE) and Confidential computing (CC)
   \item Offensive techniques (kernel exploits and bug findings)
   \item Mobile platforms (Tizen and Android)
   \item Applied cryptography
-  \item Machine learning and deep learning
+  \item Machine learning security
   \item Zero-Knowledge Proof
 \end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education}
+
+\begin{EntriesTable}
+  \Duration{2006}{2013}  &
+  \textbf{BSc in Department of Software}, Gachon University, South Korea
+\end{EntriesTable}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

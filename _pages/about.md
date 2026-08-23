@@ -4,9 +4,9 @@ layout: page
 title: Home
 ---
 
-## Security Researcher & Developer
+## Security Researcher & Systems Software Engineer
 
-## Research Interest  
+## Research Interest
 
 - System security
   - Trusted Execution Environments (TrustZone, ARM CCA, SGX, Secure Processor) and confidential computing
@@ -15,22 +15,33 @@ title: Home
   - Bug finding and Exploitations
 - Machine learning security (e.g., federated learning, LLM security)
 - Applied cryptography (e.g., Zero Knowledge Proof)
+- Security development lifecycle and vulnerability management
 
 ## About me
 
-I'm one of (passionate) security researchers and developers.
-I got B.S degree in Department of Software at [Gachon University](https://www.gachon.ac.kr/english/) in 2013.
-Also, I was in [Samsung Software Membership](https://www.secmem.org/) (at Gangnam) from 2011 to 2013.
-Since 2013, I've been working for [Samsung Research](https://research.samsung.com/).
+I'm a security researcher and systems software engineer with over a decade of experience at [Samsung Research](https://research.samsung.com/). Currently, I'm working as a Product Security Officer at [Fairphone](https://www.fairphone.com/) in Amsterdam.
 Here is my [CV](jinbum-cv.pdf) which details each of what I've done so far.
 
 ## Links
 
 [blog](https://jinb-park.github.io/blog), [GitHub](https://github.com/jinb-park), [LinkedIn](https://www.linkedin.com/in/jinbum-park-6040ba188/), [Google Scholar](https://scholar.google.com/citations?user=e-o2O2IAAAAJ), [Instagram](https://www.instagram.com/tlos6733/)
 
-## Projects
+## Projects & Works
 
-#### 2023-present
+### @Fairphone
+
+#### 2026
+
+- Product security engineering for Android-based smartphones, working with platform/ODM/SoC partners.
+- Secure development lifecycle and vulnerability management.
+
+### @Samsung Research
+
+#### 2025-2026
+
+- private info
+
+#### 2023-2024
 
 - Islet: An on-device confidential computing platform (based on ARM CCA) [[code](https://github.com/islet-project/islet)]
 
