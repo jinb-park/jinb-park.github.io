@@ -15,6 +15,8 @@
     --site-link: #1756a9;
     --site-link-visited: #6b3fa0;
     --site-code-bg: #eef0f2;
+    --site-code-border: #d8dde3;
+    --site-code-text: #20252b;
     --site-toggle-bg: #ffffff;
     --site-toggle-text: #222222;
     --site-toggle-border: #c9c9c9;
@@ -30,6 +32,17 @@
     --site-link: #8fbfff;
     --site-link-visited: #c6a6ff;
     --site-code-bg: #202832;
+    --site-code-border: #3d4b59;
+    --site-code-text: #e9edf1;
+    --site-code-muted: #abb6c2;
+    --site-code-keyword: #d2a8ff;
+    --site-code-number: #8fbfff;
+    --site-code-string: #a6e3a1;
+    --site-code-name: #ffd580;
+    --site-code-error: #ffb4b4;
+    --site-code-error-bg: #4a1f25;
+    --site-code-inserted: #b6e3a8;
+    --site-code-inserted-bg: #233a2a;
     --site-toggle-bg: #202832;
     --site-toggle-text: #f5f7fa;
     --site-toggle-border: #3d4b59;
@@ -58,11 +71,6 @@ h6,
     font-family: 'Raleway', sans-serif;
     line-height: 1.25;
     letter-spacing: -0.01em;
-}
-
-.post-content p,
-.post-content li {
-    max-width: 72ch;
 }
 
 a,
@@ -152,6 +160,102 @@ a:visited {
 pre,
 code {
     background-color: var(--site-code-bg);
+    border-color: var(--site-code-border);
+    color: var(--site-code-text);
+}
+
+.post-content .highlighter-rouge .highlight,
+.post-content pre {
+    background-color: var(--site-code-bg);
+}
+
+.post-content pre {
+    border-color: var(--site-code-border);
+    color: var(--site-code-text);
+}
+
+.post-content pre > code {
+    background-color: transparent;
+    color: inherit;
+}
+
+:root[data-theme="dark"] .highlight .c,
+:root[data-theme="dark"] .highlight .cm,
+:root[data-theme="dark"] .highlight .cp,
+:root[data-theme="dark"] .highlight .c1,
+:root[data-theme="dark"] .highlight .cs,
+:root[data-theme="dark"] .highlight .go,
+:root[data-theme="dark"] .highlight .gp,
+:root[data-theme="dark"] .highlight .gh,
+:root[data-theme="dark"] .highlight .gu,
+:root[data-theme="dark"] .highlight .nn,
+:root[data-theme="dark"] .highlight .w {
+    color: var(--site-code-muted);
+}
+
+:root[data-theme="dark"] .highlight .k,
+:root[data-theme="dark"] .highlight .kc,
+:root[data-theme="dark"] .highlight .kd,
+:root[data-theme="dark"] .highlight .kp,
+:root[data-theme="dark"] .highlight .kr,
+:root[data-theme="dark"] .highlight .kt,
+:root[data-theme="dark"] .highlight .ow,
+:root[data-theme="dark"] .highlight .ni {
+    color: var(--site-code-keyword);
+}
+
+:root[data-theme="dark"] .highlight .m,
+:root[data-theme="dark"] .highlight .mf,
+:root[data-theme="dark"] .highlight .mh,
+:root[data-theme="dark"] .highlight .mi,
+:root[data-theme="dark"] .highlight .mo,
+:root[data-theme="dark"] .highlight .il,
+:root[data-theme="dark"] .highlight .na,
+:root[data-theme="dark"] .highlight .nb,
+:root[data-theme="dark"] .highlight .no,
+:root[data-theme="dark"] .highlight .nt,
+:root[data-theme="dark"] .highlight .nv,
+:root[data-theme="dark"] .highlight .bp,
+:root[data-theme="dark"] .highlight .vc,
+:root[data-theme="dark"] .highlight .vg,
+:root[data-theme="dark"] .highlight .vi {
+    color: var(--site-code-number);
+}
+
+:root[data-theme="dark"] .highlight .s,
+:root[data-theme="dark"] .highlight .sb,
+:root[data-theme="dark"] .highlight .sc,
+:root[data-theme="dark"] .highlight .sd,
+:root[data-theme="dark"] .highlight .s2,
+:root[data-theme="dark"] .highlight .se,
+:root[data-theme="dark"] .highlight .sh,
+:root[data-theme="dark"] .highlight .si,
+:root[data-theme="dark"] .highlight .sx,
+:root[data-theme="dark"] .highlight .sr,
+:root[data-theme="dark"] .highlight .s1,
+:root[data-theme="dark"] .highlight .ss {
+    color: var(--site-code-string);
+}
+
+:root[data-theme="dark"] .highlight .nc,
+:root[data-theme="dark"] .highlight .ne,
+:root[data-theme="dark"] .highlight .nf {
+    color: var(--site-code-name);
+}
+
+:root[data-theme="dark"] .highlight .err,
+:root[data-theme="dark"] .highlight .gr,
+:root[data-theme="dark"] .highlight .gt,
+:root[data-theme="dark"] .highlight .gd,
+:root[data-theme="dark"] .highlight .gd .x {
+    background-color: var(--site-code-error-bg);
+    color: var(--site-code-error);
+}
+
+:root[data-theme="dark"] .highlight .gi,
+:root[data-theme="dark"] .highlight .gi .x {
+    background-color: var(--site-code-inserted-bg);
+    color: var(--site-code-inserted);
 }
 
 blockquote {
